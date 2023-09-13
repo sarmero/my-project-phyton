@@ -1,0 +1,1575 @@
+<!DOCTYPE html>
+<!-- saved from url=(0066)https://www.codigopiton.com/como-obtener-la-hora-actual-en-python/ -->
+<html lang="es" prefix="og: https://ogp.me/ns#" style=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1"><link rel="profile" href="https://gmpg.org/xfn/11"><link rel="pingback" href="https://www.codigopiton.com/xmlrpc.php"><title>Cómo Obtener la Hora Actual en Python - Código Pitón</title><meta name="description" content="Suele suceder que nos encontramos desarrollando algún proyecto y nos surge la necesidad de obtener la hora actual. Por ejemplo, para registrar la hora de una"><meta name="robots" content="index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large"><link rel="canonical" href="https://www.codigopiton.com/como-obtener-la-hora-actual-en-python/"><meta property="og:locale" content="es_ES"><meta property="og:type" content="article"><meta property="og:title" content="Cómo Obtener la Hora Actual en Python - Código Pitón"><meta property="og:description" content="Suele suceder que nos encontramos desarrollando algún proyecto y nos surge la necesidad de obtener la hora actual. Por ejemplo, para registrar la hora de una"><meta property="og:url" content="https://www.codigopiton.com/como-obtener-la-hora-actual-en-python/"><meta property="og:site_name" content="Código Pitón"><meta property="article:section" content="Dudas Comunes"><meta property="og:updated_time" content="2022-10-24T17:27:33+02:00"><meta property="og:image" content="https://www.codigopiton.com/wp-content/uploads/2022/10/como-obtener-la-hora-actual-en-python.jpg"><meta property="og:image:secure_url" content="https://www.codigopiton.com/wp-content/uploads/2022/10/como-obtener-la-hora-actual-en-python.jpg"><meta property="og:image:width" content="930"><meta property="og:image:height" content="327"><meta property="og:image:alt" content="Cómo obtener la hora actual en Python Header"><meta property="og:image:type" content="image/jpeg"><meta property="article:published_time" content="2022-10-24T12:02:00+02:00"><meta property="article:modified_time" content="2022-10-24T17:27:33+02:00"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Cómo Obtener la Hora Actual en Python - Código Pitón"><meta name="twitter:description" content="Suele suceder que nos encontramos desarrollando algún proyecto y nos surge la necesidad de obtener la hora actual. Por ejemplo, para registrar la hora de una"><meta name="twitter:image" content="https://www.codigopiton.com/wp-content/uploads/2022/10/como-obtener-la-hora-actual-en-python.jpg"><meta name="twitter:label1" content="Escrito por"><meta name="twitter:data1" content="Juan (Código Pitón)"><meta name="twitter:label2" content="Tiempo de lectura"><meta name="twitter:data2" content="12 minutos"> <script async="" type="text/javascript" src="https://cmp.quantcast.com/tcfv2/42/cmp2.js?referer=www.themoneytizer.com"></script><script async="" src="./Cómo Obtener la Hora Actual en Python - Código Pitón_files/matomo.js.descarga"></script><script async="" type="text/javascript" src="https://cmp.quantcast.com/choice/6Fv0cGNfc_bw8/www.themoneytizer.com/choice.js"></script><script type="application/ld+json" class="rank-math-schema">{"@context":"https://schema.org","@graph":[{"@type":["Person","Organization"],"@id":"https://www.codigopiton.com/#person","name":"C\u00f3digo Pit\u00f3n","logo":{"@type":"ImageObject","@id":"https://www.codigopiton.com/#logo","url":"https://www.codigopiton.com/wp-content/uploads/2021/12/codigo_piton_logo-150x120.png","contentUrl":"https://www.codigopiton.com/wp-content/uploads/2021/12/codigo_piton_logo-150x120.png","caption":"C\u00f3digo Pit\u00f3n","inLanguage":"es"},"image":{"@type":"ImageObject","@id":"https://www.codigopiton.com/#logo","url":"https://www.codigopiton.com/wp-content/uploads/2021/12/codigo_piton_logo-150x120.png","contentUrl":"https://www.codigopiton.com/wp-content/uploads/2021/12/codigo_piton_logo-150x120.png","caption":"C\u00f3digo Pit\u00f3n","inLanguage":"es"}},{"@type":"WebSite","@id":"https://www.codigopiton.com/#website","url":"https://www.codigopiton.com","name":"C\u00f3digo Pit\u00f3n","publisher":{"@id":"https://www.codigopiton.com/#person"},"inLanguage":"es"},{"@type":"ImageObject","@id":"https://www.codigopiton.com/wp-content/uploads/2022/10/como-obtener-la-hora-actual-en-python.jpg","url":"https://www.codigopiton.com/wp-content/uploads/2022/10/como-obtener-la-hora-actual-en-python.jpg","width":"930","height":"327","caption":"C\u00f3mo obtener la hora actual en Python Header","inLanguage":"es"},{"@type":"WebPage","@id":"https://www.codigopiton.com/como-obtener-la-hora-actual-en-python/#webpage","url":"https://www.codigopiton.com/como-obtener-la-hora-actual-en-python/","name":"C\u00f3mo Obtener la Hora Actual en Python - C\u00f3digo Pit\u00f3n","datePublished":"2022-10-24T12:02:00+02:00","dateModified":"2022-10-24T17:27:33+02:00","isPartOf":{"@id":"https://www.codigopiton.com/#website"},"primaryImageOfPage":{"@id":"https://www.codigopiton.com/wp-content/uploads/2022/10/como-obtener-la-hora-actual-en-python.jpg"},"inLanguage":"es"},{"@type":"Person","@id":"https://www.codigopiton.com/author/python/","name":"Juan (C\u00f3digo Pit\u00f3n)","url":"https://www.codigopiton.com/author/python/","image":{"@type":"ImageObject","@id":"https://secure.gravatar.com/avatar/07164d18cfe6d552d51db22822ff67f4?s=96&amp;d=mm&amp;r=g","url":"https://secure.gravatar.com/avatar/07164d18cfe6d552d51db22822ff67f4?s=96&amp;d=mm&amp;r=g","caption":"Juan (C\u00f3digo Pit\u00f3n)","inLanguage":"es"}},{"@type":"BlogPosting","headline":"C\u00f3mo Obtener la Hora Actual en Python - C\u00f3digo Pit\u00f3n","keywords":"hora,actual,sistema,python","datePublished":"2022-10-24T12:02:00+02:00","dateModified":"2022-10-24T17:27:33+02:00","articleSection":"Dudas Comunes, Librer\u00edas","author":{"@id":"https://www.codigopiton.com/author/python/"},"publisher":{"@id":"https://www.codigopiton.com/#person"},"description":"Suele suceder que nos encontramos desarrollando alg\u00fan proyecto y nos surge la necesidad de obtener la hora actual. Por ejemplo, para registrar la hora de una","name":"C\u00f3mo Obtener la Hora Actual en Python - C\u00f3digo Pit\u00f3n","@id":"https://www.codigopiton.com/como-obtener-la-hora-actual-en-python/#richSnippet","isPartOf":{"@id":"https://www.codigopiton.com/como-obtener-la-hora-actual-en-python/#webpage"},"image":{"@id":"https://www.codigopiton.com/wp-content/uploads/2022/10/como-obtener-la-hora-actual-en-python.jpg"},"inLanguage":"es","mainEntityOfPage":{"@id":"https://www.codigopiton.com/como-obtener-la-hora-actual-en-python/#webpage"}}]}</script> <link rel="alternate" type="application/rss+xml" title="Código Pitón » Feed" href="https://www.codigopiton.com/feed/"><link rel="stylesheet" id="wp-block-library-css" href="./Cómo Obtener la Hora Actual en Python - Código Pitón_files/style.min.css" type="text/css" media="all"><style id="outermost-icon-block-style-inline-css" type="text/css">.wp-block-outermost-icon-block{display:flex;line-height:0}.wp-block-outermost-icon-block.has-border-color{border:none}.wp-block-outermost-icon-block .has-icon-color svg,.wp-block-outermost-icon-block.has-icon-color svg{color:currentColor}.wp-block-outermost-icon-block .has-icon-color:not(.has-no-icon-fill-color) svg,.wp-block-outermost-icon-block.has-icon-color:not(.has-no-icon-fill-color) svg{fill:currentColor}.wp-block-outermost-icon-block .icon-container{box-sizing:border-box}.wp-block-outermost-icon-block a,.wp-block-outermost-icon-block svg{height:100%;transition:all .1s ease-in-out;width:100%}.wp-block-outermost-icon-block a:hover{transform:scale(1.1)}.wp-block-outermost-icon-block .rotate-90 svg,.wp-block-outermost-icon-block.rotate-90 svg{transform:rotate(90deg)}.wp-block-outermost-icon-block .rotate-180 svg,.wp-block-outermost-icon-block.rotate-180 svg{transform:rotate(180deg)}.wp-block-outermost-icon-block .rotate-270 svg,.wp-block-outermost-icon-block.rotate-270 svg{transform:rotate(270deg)}.wp-block-outermost-icon-block .flip-horizontal svg,.wp-block-outermost-icon-block.flip-horizontal svg{transform:scaleX(-1)}.wp-block-outermost-icon-block .flip-vertical svg,.wp-block-outermost-icon-block.flip-vertical svg{transform:scaleY(-1)}.wp-block-outermost-icon-block .flip-vertical.flip-horizontal svg,.wp-block-outermost-icon-block.flip-vertical.flip-horizontal svg{transform:scale(-1)}.wp-block-outermost-icon-block .rotate-90.flip-horizontal svg,.wp-block-outermost-icon-block.rotate-90.flip-horizontal svg{transform:rotate(90deg) scaleX(-1)}.wp-block-outermost-icon-block .rotate-90.flip-vertical svg,.wp-block-outermost-icon-block.rotate-90.flip-vertical svg{transform:rotate(90deg) scaleY(-1)}.wp-block-outermost-icon-block .rotate-90.flip-horizontal.flip-vertical svg,.wp-block-outermost-icon-block.rotate-90.flip-horizontal.flip-vertical svg{transform:rotate(90deg) scale(-1)}.wp-block-outermost-icon-block .rotate-180.flip-horizontal svg,.wp-block-outermost-icon-block.rotate-180.flip-horizontal svg{transform:rotate(180deg) scaleX(-1)}.wp-block-outermost-icon-block .rotate-180.flip-vertical svg,.wp-block-outermost-icon-block.rotate-180.flip-vertical svg{transform:rotate(180deg) scaleY(-1)}.wp-block-outermost-icon-block .rotate-180.flip-horizontal.flip-vertical svg,.wp-block-outermost-icon-block.rotate-180.flip-horizontal.flip-vertical svg{transform:rotate(180deg) scale(-1)}.wp-block-outermost-icon-block .rotate-270.flip-horizontal svg,.wp-block-outermost-icon-block.rotate-270.flip-horizontal svg{transform:rotate(270deg) scaleX(-1)}.wp-block-outermost-icon-block .rotate-270.flip-vertical svg,.wp-block-outermost-icon-block.rotate-270.flip-vertical svg{transform:rotate(270deg) scaleY(-1)}.wp-block-outermost-icon-block .rotate-270.flip-horizontal.flip-vertical svg,.wp-block-outermost-icon-block.rotate-270.flip-horizontal.flip-vertical svg{transform:rotate(270deg) scale(-1)}</style><link rel="stylesheet" id="ultimate_blocks-cgb-style-css-css" href="./Cómo Obtener la Hora Actual en Python - Código Pitón_files/blocks.style.build.css" type="text/css" media="all"><style type="text/css" data-wpacu-inline-css-file="1">/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}</style><style id="global-styles-inline-css" type="text/css">body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--neve-link-color: var(--nv-primary-accent);--wp--preset--color--neve-link-hover-color: var(--nv-secondary-accent);--wp--preset--color--nv-site-bg: var(--nv-site-bg);--wp--preset--color--nv-light-bg: var(--nv-light-bg);--wp--preset--color--nv-dark-bg: var(--nv-dark-bg);--wp--preset--color--neve-text-color: var(--nv-text-color);--wp--preset--color--nv-text-dark-bg: var(--nv-text-dark-bg);--wp--preset--color--nv-c-1: var(--nv-c-1);--wp--preset--color--nv-c-2: var(--nv-c-2);--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;}:where(.is-layout-flex){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}</style><link rel="stylesheet" id="mkaz-code-syntax-prism-css-css" href="./Cómo Obtener la Hora Actual en Python - Código Pitón_files/prism-a11y-dark.css" type="text/css" media="all"><link rel="stylesheet" id="neve-style-css" href="./Cómo Obtener la Hora Actual en Python - Código Pitón_files/style-legacy.min.css" type="text/css" media="all"><style id="neve-style-inline-css" type="text/css">.header-menu-sidebar-inner li.menu-item-nav-search { display: none; }
+		[data-row-id] .row { display: flex !important; align-items: center; flex-wrap: unset;}
+		@media (max-width: 960px) { .footer--row .row { flex-direction: column; } }
+.nv-meta-list li.meta:not(:last-child):after { content:"/" }.nv-meta-list .no-mobile{
+			display:none;
+		}.nv-meta-list li.last::after{
+			content: ""!important;
+		}@media (min-width: 769px) {
+			.nv-meta-list .no-mobile {
+				display: inline-block;
+			}
+			.nv-meta-list li.last:not(:last-child)::after {
+		 		content: "/" !important;
+			}
+		}
+ .container{ max-width: 748px; } .has-neve-button-color-color{ color: #bd5800!important; } .has-neve-button-color-background-color{ background-color: #bd5800!important; } .alignfull > [class*="__inner-container"], .alignwide > [class*="__inner-container"]{ max-width:718px;margin:auto } .button.button-primary, button, input[type=button], .btn, input[type="submit"], /* Buttons in navigation */ ul[id^="nv-primary-navigation"] li.button.button-primary > a, .menu li.button.button-primary > a, .wp-block-button.is-style-primary .wp-block-button__link, .wc-block-grid .wp-block-button .wp-block-button__link, form input[type="submit"], form button[type="submit"]{ background-color: #bd5800;color: #ffffff;border-radius:3px 3px 3px 3px;border:none;border-width:1px 1px 1px 1px; } .button.button-primary:hover, ul[id^="nv-primary-navigation"] li.button.button-primary > a:hover, .menu li.button.button-primary > a:hover, .wp-block-button.is-style-primary .wp-block-button__link:hover, .wc-block-grid .wp-block-button .wp-block-button__link:hover, form input[type="submit"]:hover, form button[type="submit"]:hover{ background-color: #b1913a;color: #ffffff; } .button.button-secondary:not(.secondary-default), .wp-block-button.is-style-secondary .wp-block-button__link{ background-color: var(--nv-primary-accent);color: #ffffff;border-radius:3px 3px 3px 3px;border:none;border-width:1px 1px 1px 1px; } .button.button-secondary.secondary-default{ background-color: var(--nv-primary-accent);color: #ffffff;border-radius:3px 3px 3px 3px;border:none;border-width:1px 1px 1px 1px; } .button.button-secondary:not(.secondary-default):hover, .wp-block-button.is-style-secondary .wp-block-button__link:hover{ background-color: var(--nv-primary-accent);color: #ffffff; } .button.button-secondary.secondary-default:hover{ background-color: var(--nv-primary-accent);color: #ffffff; } body, .site-title{ font-size: 15px; line-height: 1.6em; letter-spacing: 0px; font-weight: 400; text-transform: none; font-family: Arial, Helvetica, sans-serif, var(--nv-fallback-ff); } h1, .single h1.entry-title{ font-size: 1.5em; line-height: 1.6em; letter-spacing: 0px; font-weight: 400; text-transform: none; } h2{ font-size: 1.3em; line-height: 1.6em; letter-spacing: 0px; font-weight: 400; text-transform: none; } h3, .woocommerce-checkout h3{ font-size: 1.1em; line-height: 1.6em; letter-spacing: 0px; font-weight: 400; text-transform: none; } h4{ font-size: 1em; line-height: 1.6em; letter-spacing: 0px; font-weight: 400; text-transform: none; } h5{ font-size: 0.75em; line-height: 1.6em; letter-spacing: 0px; font-weight: 400; text-transform: none; } h6{ font-size: 0.75em; line-height: 1.6em; letter-spacing: 0px; font-weight: 400; text-transform: none; } .nv-post-thumbnail-wrap img{ box-shadow:0 14px 28px rgba(0, 0, 0, 0.12), 0 10px 10px rgba(0, 0, 0, 0.12); } form input:read-write, form textarea, form select, form select option, form.wp-block-search input.wp-block-search__input, .widget select{ color: var(--nv-text-color); font-family: Arial, Helvetica, sans-serif, var(--nv-fallback-ff); } form.search-form input:read-write{ padding-right:45px !important; font-family: Arial, Helvetica, sans-serif, var(--nv-fallback-ff); } .global-styled{ --bgcolor: var(--nv-site-bg); } .header-main-inner,.header-main-inner a:not(.button),.header-main-inner .navbar-toggle{ color: #f4efea; } .header-main-inner .nv-icon svg,.header-main-inner .nv-contact-list svg{ fill: #f4efea; } .header-main-inner .icon-bar{ background-color: #f4efea; } .hfg_header .header-main-inner .nav-ul .sub-menu{ background-color: var(--nv-primary-accent); } .hfg_header .header-main-inner{ background-color: var(--nv-primary-accent); } .header-menu-sidebar .header-menu-sidebar-bg,.header-menu-sidebar .header-menu-sidebar-bg a:not(.button),.header-menu-sidebar .header-menu-sidebar-bg .navbar-toggle{ color: #2c2c2c; } .header-menu-sidebar .header-menu-sidebar-bg .nv-icon svg,.header-menu-sidebar .header-menu-sidebar-bg .nv-contact-list svg{ fill: #2c2c2c; } .header-menu-sidebar .header-menu-sidebar-bg .icon-bar{ background-color: #2c2c2c; } .hfg_header .header-menu-sidebar .header-menu-sidebar-bg{ background-image: none;background-size:cover;background-position:50% 50%;background-color:transparent; } .hfg_header .header-menu-sidebar .header-menu-sidebar-bg:before{ background-color:#ffffff; opacity: 0.9; content: ""; position:absolute; top: 0; bottom:0; width:100%; } .header-menu-sidebar{ width: 360px; } .builder-item--logo .site-logo img{ max-width: 190px; } .builder-item--logo .site-logo .brand .nv-title-tagline-wrap{ color: #db0000; } .builder-item--logo .site-logo{ padding:10px 0px 10px 0px; } .builder-item--logo{ margin:0px 0px 0px 0px; } .builder-item--nav-icon .navbar-toggle{ padding:10px 15px 10px 15px; } .builder-item--nav-icon{ margin:0px 0px 0px 0px; } .builder-item--primary-menu .nav-menu-primary > .nav-ul li:not(.woocommerce-mini-cart-item) > a,.builder-item--primary-menu .nav-menu-primary > .nav-ul .has-caret > a,.builder-item--primary-menu .nav-menu-primary > .nav-ul .neve-mm-heading span,.builder-item--primary-menu .nav-menu-primary > .nav-ul .has-caret{ color: var(--nv-text-dark-bg); } .builder-item--primary-menu .nav-menu-primary > .nav-ul li:not(.woocommerce-mini-cart-item) > a:after,.builder-item--primary-menu .nav-menu-primary > .nav-ul li > .has-caret > a:after{ background-color: var(--nv-text-dark-bg); } .builder-item--primary-menu .nav-menu-primary > .nav-ul li:not(.woocommerce-mini-cart-item):hover > a,.builder-item--primary-menu .nav-menu-primary > .nav-ul li:hover > .has-caret > a,.builder-item--primary-menu .nav-menu-primary > .nav-ul li:hover > .has-caret{ color: var(--nv-text-dark-bg); } .builder-item--primary-menu .nav-menu-primary > .nav-ul li:hover > .has-caret svg{ fill: var(--nv-text-dark-bg); } .builder-item--primary-menu .nav-menu-primary > .nav-ul li.current-menu-item > a,.builder-item--primary-menu .nav-menu-primary > .nav-ul li.current_page_item > a,.builder-item--primary-menu .nav-menu-primary > .nav-ul li.current_page_item > .has-caret > a{ color: var(--nv-text-dark-bg); } .builder-item--primary-menu .nav-menu-primary > .nav-ul li.current-menu-item > .has-caret svg{ fill: var(--nv-text-dark-bg); } .builder-item--primary-menu .nav-ul > li:not(:last-of-type){ margin-right:20px; } .builder-item--primary-menu .style-full-height .nav-ul li:not(.menu-item-nav-search):not(.menu-item-nav-cart):hover > a:after{ width: calc(100% + 20px); } .builder-item--primary-menu .nav-ul li a, .builder-item--primary-menu .neve-mm-heading span{ min-height: 25px; } .builder-item--primary-menu{ font-size: 1em; line-height: 1.6em; letter-spacing: 0px; font-weight: 400; text-transform: none;padding:0px 0px 0px 0px;margin:0px 0px 0px 0px; } .builder-item--primary-menu svg{ width: 1em;height: 1em; } .builder-item--header_search_responsive a.nv-search.nv-icon > svg{ width: 24px;height: 24px;fill: var(--nv-text-dark-bg); } .builder-item--header_search_responsive a.nv-search.nv-icon:hover > svg{ fill: var(--nv-secondary-accent); } .builder-item--header_search_responsive input[type=submit],.builder-item--header_search_responsive .nv-search-icon-wrap{ width: 14px; } .builder-item--header_search_responsive .nv-nav-search .search-form input[type=search]{ height: 40px; font-size: 14px;padding-right:50px;border-width:1px 1px 1px 1px;border-radius:1px 1px 1px 1px;background-color: var(--nv-text-dark-bg);border-color: var(--nv-primary-accent); } .builder-item--header_search_responsive .nv-nav-search .search-form input[type=search],.builder-item--header_search_responsive input::placeholder{ color: var(--nv-primary-accent); } .builder-item--header_search_responsive .nv-search-icon-wrap .nv-icon svg{ fill: var(--nv-primary-accent);width: 14px;height: 14px; } .builder-item--header_search_responsive .close-responsive-search svg{ width: 14px;height: 14px; } .builder-item--header_search_responsive{ padding:0px 10px 0px 10px;margin:0px 0px 0px 0px; } .footer-top-inner{ height:133px;background-color: var(--nv-light-bg); } .footer-top-inner,.footer-top-inner a:not(.button),.footer-top-inner .navbar-toggle{ color: var(--nv-text-color); } .footer-top-inner .nv-icon svg,.footer-top-inner .nv-contact-list svg{ fill: var(--nv-text-color); } .footer-top-inner .icon-bar{ background-color: var(--nv-text-color); } .footer-top-inner .nav-ul .sub-menu{ background-color: var(--nv-light-bg); } .footer-bottom-inner{ background-color: var(--nv-light-bg); } .footer-bottom-inner,.footer-bottom-inner a:not(.button),.footer-bottom-inner .navbar-toggle{ color: var(--nv-text-color); } .footer-bottom-inner .nv-icon svg,.footer-bottom-inner .nv-contact-list svg{ fill: var(--nv-text-color); } .footer-bottom-inner .icon-bar{ background-color: var(--nv-text-color); } .footer-bottom-inner .nav-ul .sub-menu{ background-color: var(--nv-light-bg); } .builder-item--footer-one-widgets{ padding:0px 0px 0px 0px;margin:0px 0px 0px 0px; } .builder-item--footer-two-widgets{ padding:0px 0px 0px 0px;margin:0px 0px 0px 0px; } @media(min-width: 576px){ .container{ max-width: 992px; } body, .site-title{ font-size: 16px; line-height: 1.6em; letter-spacing: 0px; } h1, .single h1.entry-title{ font-size: 1.5em; line-height: 1.6em; letter-spacing: 0px; } h2{ font-size: 1.3em; line-height: 1.6em; letter-spacing: 0px; } h3, .woocommerce-checkout h3{ font-size: 1.1em; line-height: 1.6em; letter-spacing: 0px; } h4{ font-size: 1em; line-height: 1.6em; letter-spacing: 0px; } h5{ font-size: 0.75em; line-height: 1.6em; letter-spacing: 0px; } h6{ font-size: 0.75em; line-height: 1.6em; letter-spacing: 0px; } .header-menu-sidebar{ width: 360px; } .builder-item--logo .site-logo img{ max-width: 260px; } .builder-item--logo .site-logo{ padding:10px 0px 10px 0px; } .builder-item--logo{ margin:0px 0px 0px 0px; } .builder-item--nav-icon .navbar-toggle{ padding:10px 15px 10px 15px; } .builder-item--nav-icon{ margin:0px 0px 0px 0px; } .builder-item--primary-menu .nav-ul > li:not(:last-of-type){ margin-right:20px; } .builder-item--primary-menu .style-full-height .nav-ul li:not(.menu-item-nav-search):not(.menu-item-nav-cart):hover > a:after{ width: calc(100% + 20px); } .builder-item--primary-menu .nav-ul li a, .builder-item--primary-menu .neve-mm-heading span{ min-height: 25px; } .builder-item--primary-menu{ font-size: 1em; line-height: 1.6em; letter-spacing: 0px;padding:0px 0px 0px 0px;margin:0px 0px 0px 0px; } .builder-item--primary-menu svg{ width: 1em;height: 1em; } .builder-item--header_search_responsive input[type=submit],.builder-item--header_search_responsive .nv-search-icon-wrap{ width: 14px; } .builder-item--header_search_responsive .nv-nav-search .search-form input[type=search]{ height: 40px; font-size: 14px;padding-right:50px;border-width:1px 1px 1px 1px;border-radius:1px 1px 1px 1px; } .builder-item--header_search_responsive .nv-search-icon-wrap .nv-icon svg{ width: 14px;height: 14px; } .builder-item--header_search_responsive .close-responsive-search svg{ width: 14px;height: 14px; } .builder-item--header_search_responsive{ padding:0px 10px 0px 10px;margin:0px 0px 0px 0px; } .footer-top-inner{ height:70px; } .builder-item--footer-one-widgets{ padding:0px 0px 0px 0px;margin:0px 0px 0px 0px; } .builder-item--footer-two-widgets{ padding:0px 0px 0px 0px;margin:0px 0px 0px 0px; } }@media(min-width: 960px){ .container{ max-width: 1280px; } #content .container .col, #content .container-fluid .col{ max-width: 74%; } .alignfull > [class*="__inner-container"], .alignwide > [class*="__inner-container"]{ max-width:917px } .container-fluid .alignfull > [class*="__inner-container"], .container-fluid .alignwide > [class*="__inner-container"]{ max-width:calc(74% + 15px) } .nv-sidebar-wrap, .nv-sidebar-wrap.shop-sidebar{ max-width: 26%; } body, .site-title{ font-size: 16px; line-height: 1.6em; letter-spacing: 0px; } h1, .single h1.entry-title{ font-size: 2em; line-height: 1.6em; letter-spacing: 0px; } h2{ font-size: 1.6em; line-height: 1.6em; letter-spacing: 0px; } h3, .woocommerce-checkout h3{ font-size: 1.5em; line-height: 1.6em; letter-spacing: 0px; } h4{ font-size: 1.25em; line-height: 1.6em; letter-spacing: 0px; } h5{ font-size: 1em; line-height: 1.6em; letter-spacing: 0px; } h6{ font-size: 1em; line-height: 1.6em; letter-spacing: 0px; } .blog .blog-entry-title, .archive .blog-entry-title{ font-size: 20px; } .blog .entry-summary, .archive .entry-summary, .blog .post-pages-links{ font-size: 15px; } .blog .nv-meta-list li, .archive .nv-meta-list li{ font-size: 13px; } .header-menu-sidebar{ width: 360px; } .builder-item--logo .site-logo img{ max-width: 350px; } .builder-item--logo .site-logo{ padding:10px 0px 10px 0px; } .builder-item--logo{ margin:0px 0px 0px 0px; } .builder-item--nav-icon .navbar-toggle{ padding:10px 15px 10px 15px; } .builder-item--nav-icon{ margin:0px 0px 0px 0px; } .builder-item--primary-menu .nav-ul > li:not(:last-of-type){ margin-right:14px; } .builder-item--primary-menu .style-full-height .nav-ul li:not(.menu-item-nav-search):not(.menu-item-nav-cart) > a:after{ left:-7px;right:-7px } .builder-item--primary-menu .style-full-height .nav-ul li:not(.menu-item-nav-search):not(.menu-item-nav-cart):hover > a:after{ width: calc(100% + 14px); } .builder-item--primary-menu .nav-ul li a, .builder-item--primary-menu .neve-mm-heading span{ min-height: 24px; } .builder-item--primary-menu{ font-size: 1em; line-height: 1.6em; letter-spacing: 0px;padding:0px 0px 0px 0px;margin:0px 0px 0px 0px; } .builder-item--primary-menu svg{ width: 1em;height: 1em; } .builder-item--header_search_responsive input[type=submit],.builder-item--header_search_responsive .nv-search-icon-wrap{ width: 14px; } .builder-item--header_search_responsive .nv-nav-search .search-form input[type=search]{ height: 40px; font-size: 14px;padding-right:50px;border-width:1px 1px 1px 1px;border-radius:1px 1px 1px 1px; } .builder-item--header_search_responsive .nv-search-icon-wrap .nv-icon svg{ width: 14px;height: 14px; } .builder-item--header_search_responsive .close-responsive-search svg{ width: 14px;height: 14px; } .builder-item--header_search_responsive{ padding:0px 10px 0px 10px;margin:0px 0px 0px 0px; } .footer-top-inner{ height:90px; } .builder-item--footer-one-widgets{ padding:0px 0px 0px 0px;margin:0px 0px 0px 0px; } .builder-item--footer-two-widgets{ padding:0px 0px 0px 0px;margin:0px 0px 0px 0px; } }:root{--nv-primary-accent:#16789c;--nv-secondary-accent:#169a91;--nv-site-bg:#ffffff;--nv-light-bg:#eaf7fc;--nv-dark-bg:#14171c;--nv-text-color:#2c2c2c;--nv-text-dark-bg:#eaf7fc;--nv-c-1:#77b978;--nv-c-2:#f37262;--nv-fallback-ff:Arial, Helvetica, sans-serif;}</style><style id="generateblocks-inline-css" type="text/css">.gb-block-image img{vertical-align:middle;}.gb-block-image-3d21eb53{text-align:center;}.gb-block-image-eac4c95c{padding-top:0;padding-bottom:0;margin-top:0;margin-bottom:0;}.gb-image-eac4c95c{width:100%;object-fit:fill;}.gb-icon{display:inline-flex;line-height:0;}.gb-icon svg{height:1em;width:1em;fill:currentColor;}.gb-highlight{background:none;color:unset;}figcaption.gb-headline-1abf2e70{text-align:center;font-size:18px;line-height:0.8em;}.gb-container .wp-block-image img{vertical-align:middle;}.gb-container .gb-shape{position:absolute;overflow:hidden;pointer-events:none;line-height:0;}.gb-container .gb-shape svg{fill:currentColor;}.gb-container-6c8c050b{margin:5px 5px 0;background-color:var(--nv-light-bg);border-radius:2px;border-style: solid;border-width:1px;border-color:var(--nv-primary-accent);}.gb-container-6c8c050b > .gb-inside-container{padding:0 5px 10px;max-width:1100px;margin-left:auto;margin-right:auto;}</style> <script type="text/javascript" src="./Cómo Obtener la Hora Actual en Python - Código Pitón_files/jquery.min.js.descarga" id="jquery-core-js"></script> <link rel="preload" href="https://www.codigopiton.com/wp-content/fonts/opensans/OpenSans-Regular.woff2" as="font" type="font/woff2"><link rel="preload" href="https://www.codigopiton.com/wp-content/fonts/opensans/OpenSans-Bold.woff2" as="font" type="font/woff2"> <script type="text/javascript" defer="">(function() {
+  var host = 'www.themoneytizer.com';
+  var element = document.createElement('script');
+  var firstScript = document.getElementsByTagName('script')[0];
+  var url = 'https://cmp.quantcast.com'
+    .concat('/choice/', '6Fv0cGNfc_bw8', '/', host, '/choice.js');
+  var uspTries = 0;
+  var uspTriesLimit = 3;
+  element.async = true;
+  element.type = 'text/javascript';
+  element.src = url;
+
+  firstScript.parentNode.insertBefore(element, firstScript);
+
+  function makeStub() {
+    var TCF_LOCATOR_NAME = '__tcfapiLocator';
+    var queue = [];
+    var win = window;
+    var cmpFrame;
+
+    function addFrame() {
+      var doc = win.document;
+      var otherCMP = !!(win.frames[TCF_LOCATOR_NAME]);
+
+      if (!otherCMP) {
+        if (doc.body) {
+          var iframe = doc.createElement('iframe');
+
+          iframe.style.cssText = 'display:none';
+          iframe.name = TCF_LOCATOR_NAME;
+          doc.body.appendChild(iframe);
+        } else {
+          setTimeout(addFrame, 5);
+        }
+      }
+      return !otherCMP;
+    }
+
+    function tcfAPIHandler() {
+      var gdprApplies;
+      var args = arguments;
+
+      if (!args.length) {
+        return queue;
+      } else if (args[0] === 'setGdprApplies') {
+        if (
+          args.length > 3 &&
+          args[2] === 2 &&
+          typeof args[3] === 'boolean'
+        ) {
+          gdprApplies = args[3];
+          if (typeof args[2] === 'function') {
+            args[2]('set', true);
+          }
+        }
+      } else if (args[0] === 'ping') {
+        var retr = {
+          gdprApplies: gdprApplies,
+          cmpLoaded: false,
+          cmpStatus: 'stub'
+        };
+
+        if (typeof args[2] === 'function') {
+          args[2](retr);
+        }
+      } else {
+        if(args[0] === 'init' && typeof args[3] === 'object') {
+          args[3] = { ...args[3], tag_version: 'V2' };
+        }
+        queue.push(args);
+      }
+    }
+
+    function postMessageEventHandler(event) {
+      var msgIsString = typeof event.data === 'string';
+      var json = {};
+
+      try {
+        if (msgIsString) {
+          json = JSON.parse(event.data);
+        } else {
+          json = event.data;
+        }
+      } catch (ignore) {}
+
+      var payload = json.__tcfapiCall;
+
+      if (payload) {
+        window.__tcfapi(
+          payload.command,
+          payload.version,
+          function(retValue, success) {
+            var returnMsg = {
+              __tcfapiReturn: {
+                returnValue: retValue,
+                success: success,
+                callId: payload.callId
+              }
+            };
+            if (msgIsString) {
+              returnMsg = JSON.stringify(returnMsg);
+            }
+            if (event && event.source && event.source.postMessage) {
+              event.source.postMessage(returnMsg, '*');
+            }
+          },
+          payload.parameter
+        );
+      }
+    }
+
+    while (win) {
+      try {
+        if (win.frames[TCF_LOCATOR_NAME]) {
+          cmpFrame = win;
+          break;
+        }
+      } catch (ignore) {}
+
+      if (win === window.top) {
+        break;
+      }
+      win = win.parent;
+    }
+    if (!cmpFrame) {
+      addFrame();
+      win.__tcfapi = tcfAPIHandler;
+      win.addEventListener('message', postMessageEventHandler, false);
+    }
+  };
+
+  makeStub();
+
+  var uspStubFunction = function() {
+    var arg = arguments;
+    if (typeof window.__uspapi !== uspStubFunction) {
+      setTimeout(function() {
+        if (typeof window.__uspapi !== 'undefined') {
+          window.__uspapi.apply(window.__uspapi, arg);
+        }
+      }, 500);
+    }
+  };
+
+  var checkIfUspIsReady = function() {
+    uspTries++;
+    if (window.__uspapi === uspStubFunction && uspTries < uspTriesLimit) {
+      console.warn('USP is not accessible');
+    } else {
+      clearInterval(uspInterval);
+    }
+  };
+
+  if (typeof window.__uspapi === 'undefined') {
+    window.__uspapi = uspStubFunction;
+    var uspInterval = setInterval(checkIfUspIsReady, 6000);
+  }
+})();</script> <script>var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['requireCookieConsent']);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://www.codigopiton.com/matomo/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();</script> <style>#ub_table-of-contents-3c54d71b-dd4b-4a27-ac8b-8854da2e65a5 .ub_table-of-contents-header{ text-align: left; } #ub-styled-box-31edf12e-27fb-4215-b557-b4b416d70cc1.ub-notification-box{ background-color: #ffdd80; color: var(--nv-text-color); border-left-color: #eaac00; } #ub-styled-box-d60e0320-22cc-4c73-beb2-d0e160104760.ub-notification-box{ background-color: #ffdd80; color: #664b00; border-left-color: #eaac00; } #ub-styled-box-d5a2950a-a7b2-473f-b95e-0201280bfa2d.ub-notification-box{ background-color: #ffdd80; color: #634800; border-left-color: #eaac00; } #ub-styled-box-24eb7e35-61f6-4f69-8433-6c00fdd3a84e.ub-notification-box{ background-color: #d9edf7; color: #31708f; border-left-color: #31708f; }</style><link rel="icon" href="https://www.codigopiton.com/wp-content/uploads/2021/12/cropped-codigo_piton_logo-32x32.png" sizes="32x32"><link rel="icon" href="https://www.codigopiton.com/wp-content/uploads/2021/12/cropped-codigo_piton_logo-192x192.png" sizes="192x192"><link rel="apple-touch-icon" href="https://www.codigopiton.com/wp-content/uploads/2021/12/cropped-codigo_piton_logo-180x180.png"><meta name="msapplication-TileImage" content="https://www.codigopiton.com/wp-content/uploads/2021/12/cropped-codigo_piton_logo-270x270.png"><style type="text/css" id="wp-custom-css">.oculto {
+	display: none;
+}
+
+[id="100591-1"] {
+	/* TheMoneyTizer */
+	margin-top:15px;
+	min-height: 90px;
+	height: 90px;
+}
+
+[id="100591-2"] {
+	/* TheMoneyTizer */
+	min-height: 250px;
+	height: 250px;
+
+}
+
+
+@font-face {
+	font-family: 'opensans-regular';
+	src: url('https://www.codigopiton.com/wp-content/fonts/opensans/OpenSans-Regular.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+	font-display: optional;
+}
+
+@font-face {
+	font-family: 'opensans-bold';
+	src: url('https://www.codigopiton.com/wp-content/fonts/opensans/OpenSans-Bold.woff2') format('woff2');
+	font-weight: bold;
+	font-style: normal;
+	font-display: optional;
+}
+
+  /* adjust fallback font overrides */
+ /*@font-face {
+    font-family: 'fallback-font';
+	 src: local(sans-serif) format(system);
+   ascent-override: 100%;
+    descent-override: 20%;
+    line-gap-override: normal;
+    advance-override: 10;
+    
+  }*/
+
+body {font-family: 'opensans-regular', sans-serif, Arial;}
+
+strong {font-family: 'opensans-bold', Arial, sans-serif;}
+
+.header-main {
+	position: fixed;
+	width: 100%;
+	z-index: 100;
+}
+
+.header-main-inner {
+  max-height: 68px;	
+}
+
+
+
+.wp-post-image {
+	border-radius: 2px;
+}
+
+#content {
+	padding-top: 58px; /* adjust this to match the height of your header */
+}
+
+
+H1, H2, H3, H4, H5 {
+	color: var(--nv-primary-accent);
+	
+}
+
+H2 {
+	padding-left: 4px; 
+	background-color: var(--nv-light-bg);
+	border-radius: 3px;
+	
+}
+
+H2.blog-entry-title {
+	background-color: transparent;
+	padding-left: 0px; 
+}
+
+H2.blog-entry-title a {
+	color: var(--nv-primary-accent);
+}
+
+H2.blog-entry-title a:hover {
+	color: var(--nv-secondary-accent);
+}
+
+.nv-comment-content a:hover, .nv-content-wrap a {
+	text-decoration: underline;
+} 
+
+a:hover {
+	text-decoration: none;
+	color:var(--nv-secondary-accent);
+}
+
+
+
+#nv-primary-navigation-main.nav-ul li a {
+	font-size: 15px;
+}
+
+
+
+.nav-ul li a:hover {
+	text-decoration: underline;
+}
+
+
+#header-menu-sidebar .menu-item a {
+	color: var(--nv-primary-accent);
+}
+
+#nv-primary-navigation-main .sub-menu {
+	background-color: var(--nv-light-bg);
+	
+	alignment-baseline;
+	box-shadow: 0 15px 30px rgba(0,0,0,.08),0 10px 15px rgba(0,0,0,.12);
+	transition: all ease-in-out 0.3s;
+}
+
+#nv-primary-navigation-main .sub-menu li  {
+	
+	border-style: solid;
+	border-width: 0 0 1px 0;
+	border-color: #D6F0F9;
+	
+}
+
+#nv-primary-navigation-main .sub-menu a {
+	justify-content: left;
+	color: var(--nv-primary-accent);
+}
+
+#nv-primary-navigation-main .sub-menu a:hover {
+	color: var(--nv-primary-accent);
+	text-decoration: none;
+}
+
+#nv-primary-navigation-main .sub-menu li:hover {
+	background-color: #D6F0F9;
+}
+
+#nv-primary-navigation-main .caret {
+	margin-left: 0;
+	margin-right: 0;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+#nv-primary-navigation-main .caret-wrap {
+	margin-left: 0;
+}
+
+
+
+.attachment-neve-blog {
+	border-radius: 3px;
+}
+
+
+.widget {
+	font-size:13px;
+}
+
+.widget P.widget-title {
+	
+	font-size: 18px;
+	font-weight: 400;
+	color:var(--nv-secondary-accent);
+
+
+}
+
+#recent-posts-4 li {
+	font-size: 14px;
+	list-style:circle;
+}
+
+
+#new_subscriber label {
+	font-size: 12px;
+
+}
+
+.wp-block-preformatted {
+	border-radius:3px;
+}
+
+
+#new_subscriber .primera-capa {
+	padding-top:5px;
+	font-size: 10px;
+	color:gray;
+	resize:none;
+	box-sizing: content-box;
+	min-height:100px;
+}
+
+.image-text {
+	color: white;
+	position: relative;
+	
+}
+
+.image-text-bottom {
+	position:absolute;
+	bottom: 0;
+	padding: 0 6px 6px 6px;
+	font-size: 14px;
+	width: 200px;
+}
+
+#block-23 .tooltip {
+	text-decoration-style: dotted;
+}
+
+.tooltip {
+	padding-top: 4px;
+  position: relative;
+  display: inline-block;
+  text-decoration: underline;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  background-color: var(--nv-light-bg);
+  color: var(--nv-text-color);
+  text-align: left;
+  border-radius: 3px;
+  padding: 5px 5px;
+	
+	border: 1px solid black;
+
+  /* Position the tooltip */
+  position: absolute;
+	width: min(400px, 100%);
+  z-index: 2000;
+	bottom: -30%;
+	
+	right: 0;
+	line-height: 1.5;
+ 
+}
+
+
+.tooltip .tooltiptext-fiverr {
+  visibility: hidden;
+  background-color: var(--nv-light-bg);
+  color: var(--nv-text-color);
+  text-align: left;
+  border-radius: 3px;
+  padding: 5px 5px;
+	
+	border: 1px solid black;
+	
+	font-size: 14px;
+
+  /* Position the tooltip */
+  position: absolute;
+	width: 200px;
+	
+  z-index: 2000;
+
+	
+
+	line-height: 1.5;
+ 
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.tooltip:hover .tooltiptext-fiverr {
+  visibility: visible;
+}
+
+#block-23 {
+	color: var(-nv-text-color);
+	padding: 10px 0px 10px 0px;
+
+}
+
+
+#block-23 .widget-form-titulo {
+	color: var(--nv-primary-accent);
+	font-size: 16px;
+	padding-bottom: 0px;
+	padding-top:5px;
+	
+}
+
+
+
+#block-23 .string {
+	max-width: 100%;
+	min-width: 100%;
+
+}
+
+
+#block-23 .btn {
+	margin-top: 10px;
+	margin-bottom: 0px;
+	background-color: var(--nv-primary-accent);
+	border-color: var(--nv-primary-accent);
+	border-style: solid;
+	border-width: 1px;
+	color: var(--nv-text-dark-bg);
+	font-size: 14px;
+	min-width: 100%;
+	box-shadow: 1px 2px 4px #777;
+}
+
+#block-23 .btn:hover {
+
+	background-color: var(--nv-secondary-accent);
+	border-color: var(--nv-secondary-accent);
+
+}
+
+#block-23 .custom-text-wrapper {
+	padding-bottom: 0px;
+}
+
+
+
+form[id*="new_subs"] input[class*='string'] {
+	color: var(--nv-primary-accent);
+	height:30px;
+
+	
+}
+
+form[id*="new_subs"] input {
+	margin-bottom: 8px;
+}
+
+
+
+/* formulario suscripcion */
+.gb-container .wp-block-image img{vertical-align:middle}.gb-container .gb-shape{position:absolute;overflow:hidden;pointer-events:none;line-height:0}.gb-container .gb-shape svg{fill:currentColor}.gb-container-d6efde58{margin:0;max-width:1100px;margin-left:auto;margin-right:auto;background-color:#fff8eb;border-width:1px;border-style:solid;border-color:#ffd17d;position:relative}.gb-container-d6efde58>.gb-inside-container{padding:0 0 40px;max-width:1100px;margin-left:auto;margin-right:auto}.gb-container-d6efde58>.gb-shapes .gb-shape-1{color:#ffebd0;left:0;right:0;bottom:-1px}.gb-container-d6efde58>.gb-shapes .gb-shape-1 svg{height:200px;width:calc(100% + 1.3px);position:relative;left:50%;transform:translateX(-50%);min-width:100%}.gb-container-ade95ad2{margin:0 20px}.gb-container-ade95ad2>.gb-inside-container{padding:0;z-index:1;position:relative}.gb-grid-wrapper>.gb-grid-column-ade95ad2{width:33.33%}.gb-container-25578d26{margin:0 20px}.gb-container-25578d26>.gb-inside-container{padding:0;z-index:1;position:relative}.gb-grid-wrapper>.gb-grid-column-25578d26{width:66.66%}.gb-icon{display:inline-flex;line-height:0}.gb-icon svg{height:1em;width:1em;fill:currentColor}.gb-highlight{background:none;color:unset}h3.gb-headline-e144e750{background-color:#ffe3af;padding:0;margin-right:0;border-width:0;display:flex;align-items:center}h3.gb-headline-e144e750 .gb-icon{padding:0 20px}h3.gb-headline-e144e750 .gb-icon svg{width:1em;height:1em}.gb-grid-wrapper{display:flex;flex-wrap:wrap}.gb-grid-wrapper>.gb-grid-column>.gb-container{display:flex;flex-direction:column;height:100%}.gb-grid-column{box-sizing:border-box}.gb-grid-wrapper .wp-block-image{margin-bottom:0}.gb-grid-wrapper-27cfea5f{margin-left:-30px}.gb-grid-wrapper-27cfea5f>.gb-grid-column{padding-left:30px}@media (max-width:767px){.gb-grid-wrapper>.gb-grid-column{width:100%}}
+
+.wp-block-preformatted code {
+	padding-left:0;
+	color: var(--nv-text-color);
+}
+
+.custom-block-preformatted {
+	background-color: #e6f4f7;
+	border-color: #78999f;
+	
+}
+
+.wp-block-preformatted {
+		background-color: #dcf0ef;
+	border-color: var(--nv-secondary-accent);
+	color: var(--nv-text-color);
+}
+
+.ub-styled-box {
+	border-radius: 0 3px 3px 0;
+}
+
+/*
+@keyframes slide-up {
+  0% {
+    transform: translateY(400vh);
+  }
+  100% {
+    transform: translateY(0vh);
+  }
+}
+
+#moove_gdpr_cookie_info_bar {
+
+  transform: translateY(400vh);
+  animation: slide-up 1s forwards;
+}*/
+
+figure {
+	margin-bottom: 15px;
+}
+
+/* table of contents */
+
+.ub_table-of-contents {
+	border-color: var(--nv-primary-accent);
+	border-radius: 3px;
+}
+
+.ub_table-of-contents * {
+	border-radius: 5px;
+}
+
+
+div[id^='ub_table-of-contents'] .ub_table-of-contents-header-container  {
+	background-color: var(--nv-light-bg);
+	
+	
+}
+
+#ub_table-of-contents-a7046cfb-776a-4c42-b82f-e16f20b7d355 .ub_table-of-contents-header-container .ub_table-of-contents-title {
+		color: var(--nv-text-color);
+	}
+
+#ub_table-of-contents-a7046cfb-776a-4c42-b82f-e16f20b7d355 .ub_table-of-contents-extra-container  {
+	background-color: var(--nv-light-bg)
+	
+}
+
+#ub_table-of-contents-a7046cfb-776a-4c42-b82f-e16f20b7d355 .ub_table-of-contents-extra-container a {
+	color:var(--nv-primary-accent);
+}
+
+#ub_table-of-contents-a7046cfb-776a-4c42-b82f-e16f20b7d355 .ub_table-of-contents-extra-container a:hover {
+	color:var(--nv-secondary-accent);
+}
+
+/* tabla de cotenidos easy toc */
+
+#ez-toc-container {
+	padding-left: 15px;
+	border-radius: 3px;
+	border-color: var(--nv-primary-accent);
+}
+
+#ez-toc-container ul li {
+	list-style: circle inside;
+
+}
+.ez-toc-title-container {
+	margin-bottom: 10px;
+	color: var(--nv-text-color);
+	
+}
+
+ li#ez-toc-container ul li.ez-toc-heading-level-2   {
+	margin-bottom: 5px;
+}
+
+#ez-toc-container ul li a {
+	color: var(--nv-primary-accent);
+}
+
+#ez-toc-container ul li a:hover {
+	color: var(--nv-secondary-accent);
+	text-decoration: none;
+}
+
+#ez-toc-container ul li a:visited {
+	color: var(--nv-primary-accent);
+	text-decoration: none;
+}
+#ez-toc-container ul li a:visited:hover {
+	color: var(--nv-secondary-accent);
+	text-decoration: none;
+}
+
+
+blockquote {
+	border-radius: 0 3px 3px 0;
+	border-left-style: solid;
+	border-left-width: 4px;
+	padding: 15px;
+	margin: 10px 0;
+}
+
+blockquote::after {
+	display: none;
+}
+
+blockquote::before {
+	display: none;
+}
+
+
+blockquote p {
+	font-size: inherit;
+	margin-bottom:inherit;
+}
+
+
+blockquote :last-child {
+	margin-bottom: 0px;
+}
+
+.cita-azul {
+	background-color: #d9edf7;
+	border-color: #31708f;
+	color: #31708f;
+}
+
+#block-15 {
+	 margin-bottom: 0px;
+	 padding-bottom: 0px;
+}
+
+#custom_html-3 {
+	 margin-bottom: 0px;
+	 padding-bottom: 0px;
+}
+
+/* Remarcados en ttt */
+
+code {
+	background-color: #dcf0ef;
+	border-width: 0;
+	border-color: var(--nv-secondary-accent);
+}
+
+/* boton cabecera */
+#menu-item-2046 {
+	background-color: var(--nv-secondary-accent);
+	border-radius: 3px;
+	padding-left: 8px;
+	padding-right: 8px;
+
+  animation-name: animate-button;
+    animation-duration: 180s;
+	
+	box-shadow: 7px 7px 6px 0px rgba(0,0,0,0.48);
+-webkit-box-shadow: 7px 7px 6px 0px rgba(0,0,0,0.48);
+-moz-box-shadow: 7px 7px 6px 0px rgba(0,0,0,0.48);
+	
+}
+
+@keyframes animate-button {
+
+    11.0% { transform: rotate(0deg); }
+    11.1% { transform: rotate(-8deg); }
+    11.2% { transform: rotate(8deg); }
+    11.3% { transform: rotate(0deg); }
+
+    33.0% { transform: rotate(0deg); }
+    33.1% { transform: rotate(-8deg); }
+    33.2% { transform: rotate(8deg); }
+    33.3% { transform: rotate(0deg); }
+
+    99.0% { transform: rotate(0deg); }
+    99.1% { transform: rotate(-8deg); }
+    99.2% { transform: rotate(8deg); }
+    99.3% { transform: rotate(0deg); }
+    
+}
+
+/* formulario en post */
+
+.formulario-en-post {
+	color: var(-nv-text-color);
+	border-style: solid;
+	border-width: 1px;
+	border-color: var(--nv-secondary-accent);
+	padding: 10px 10px 10px 10px;
+	border-radius: 3px;
+	background-color: #D3E2EF;
+	background-color:
+		rgba(22,154,145,0.15);
+	box-shadow: 2px 2px 4px #aaaaaa;
+}
+
+
+
+.formulario-en-post .btn {
+	margin-top: 10px;
+	margin-bottom: 0px;
+	background-color: var(--nv-primary-accent);
+	border-color: var(--nv-primary-accent);
+	border-style: solid;
+	border-width: 1px;
+	color: var(--nv-text-dark-bg);
+	font-size: 14px;
+	min-width: 75%;
+	box-shadow: 1px 2px 4px #777;
+}
+
+.formulario-en-post  input[class*="string"] {
+  color: var(--nv-primary-accent);
+  height: 30px;
+	min-width: 75%;
+	max-width: 75%;
+}
+
+
+.formulario-en-post .btn:hover {
+
+	background-color: var(--nv-secondary-accent);
+	border-color: var(--nv-secondary-accent);
+	
+}
+
+.formulario-en-post .custom-text-wrapper {
+padding-bottom: 10px;
+
+}
+
+
+
+.formulario-en-post .tooltip .tooltiptext {
+  font-size: 13px;
+  background-color: var(--nv-light-bg);
+  color: var(--nv-text-color);
+  text-align: left;
+  border-radius: 3px;
+  padding: 5px 5px;
+	
+	border: 1px solid black;
+
+  /* Position the tooltip */
+  position: absolute;
+	width: min(400px, 100%);
+  z-index: 2000;
+	bottom: -30%;
+	
+	right: 0;
+ 
+}
+
+.code-block-3 {
+	color: var(-nv-text-color);
+	border-style: solid;
+	border-width: 1px;
+	border-color: var(--nv-secondary-accent);
+	padding: 10px 10px 10px 10px;
+	border-radius: 3px;
+	background-color: #D3E2EF;
+	background-color:
+		rgba(22,154,145,0.15);
+	box-shadow: 2px 2px 4px #aaaaaa;
+}
+
+.code-block-3 .scriptlesssocialsharing {
+	
+	min-width: 75%;
+	max-width: 75%;
+	box-shadow: 2px 2px 4px #aaaaaa;
+}
+
+/* opt-in post */
+
+.opt-in-invitacion {
+	color: var(-nv-text-color);
+	border-style: solid;
+	border-width: 1px;
+	border-color: var(--nv-secondary-accent);
+	padding: 10px 10px 10px 10px;
+	border-radius: 3px;
+	background-color:
+		rgba(22,154,145,0.15);
+	box-shadow: 2px 2px 4px #aaaaaa;
+	margin-bottom: 30px;
+	margin-top: 30px;
+}
+
+
+.opt-in-invitacion-titulo {
+	text-transform: uppercase;
+	font-size:24px;
+}
+
+.opt-in-invitacion-texto {
+	text-align: left;
+	padding: 0 15px 0 15px;
+}
+
+.opt-in-invitacion-enlace {
+	margin-top: 50px;
+	margin-bottom: 20px;
+	text-decoration: none;
+}
+
+#opt-in-boton {
+	text-decoration: none;
+}
+
+.opt-in-invitacion-enlace a {
+	background-color: var(--nv-primary-accent);
+	border-color: var(--nv-primary-accent);
+	border-style: solid;
+	border-width: 1px;
+	font-size: 14px;
+	min-width: 75%;
+	box-shadow: 1px 2px 4px #777;
+	text-decoration: none;
+	padding: 15px;
+	color: white;
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: 700;
+	border-radius: 3px;
+}
+
+
+
+
+.opt-in-invitacion-enlace a:hover {
+
+	background-color: var(--nv-secondary-accent);
+	border-color: var(--nv-secondary-accent);
+	
+	
+}
+
+
+/*  pop up  */
+
+.mfp-container {
+	-webkit-backdrop-filter: blur(4px);
+	backdrop-filter: blur(4px);
+
+	
+}
+
+.mfp-content {
+	padding: 0;
+	margin: 0;
+}
+
+.popup-optin-outer {
+	background-color:var(--nv-primary-accent);
+	padding: 20px;
+		
+}
+
+.popup-optin {
+	background-color:var(--nv-primary-accent);
+	border-radius: 0;
+	border-color: white;
+	border-width: 1px;
+	border-style: solid;
+}
+
+
+.popup-optin .formulario-en-post {
+	border-width: 0;
+	background-color: inherit;
+	box-shadow: none;
+	
+}
+
+
+.popup-optin .custom-text-wrapper {
+	color:var(--nv-light-bg);
+	font-size: 26px;
+	font-weight: 700;
+	text-align: center;
+}
+
+
+.popup-optin .custom-text-wrapper2 {
+	color:white;
+	font-size: 20px;
+	padding: 20px 70px;
+	text-align: center;
+
+}
+
+.popup-optin .form-group {
+	color: white;
+	text-align: center;
+}
+
+.popup-optin .form-group a {
+	color: white;
+	text-decoration: underline;
+}
+
+.popup-optin .submit-wrapper  {
+	text-align: center;
+	
+}
+
+.popup-optin .div-boton-cerrar-popup {
+	 margin-top: 12px;
+	 text-align: center;
+	 font-size: 20px;
+	 margin-bottom: 20px;
+}
+
+.popup-optin .div-boton-cerrar-popup a {
+	 color: lightgray;
+}
+
+.popup-optin .div-boton-cerrar-popup a:hover {
+	 color: white;
+}
+
+
+.popup-optin .btn  {
+	background-color:var(--nv-secondary-accent);
+	text-align: center;
+	height: 50px;
+	font-size: 20px;
+	color: white;
+	border-width:0px;
+		box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.48);
+-webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.48);
+-moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.48);
+}
+
+.popup-optin .tooltip {
+	text-align: center;
+	color:var(--nv-light-bg);
+	font-size: 13px;
+	padding-left: 85px;
+	
+}
+
+
+/*  pop up 2 */
+
+.popup-optin2-outer {
+	background-color:white;
+	padding: 0px;
+	display: flex;
+	flex-flow: row;
+	overflow: hidden;
+		
+}
+
+
+button.mfp-close.themify-popup-close 
+{
+	 display:none;
+}
+
+
+
+
+.popup-optin2-image {
+	flex-basis: 233px;
+	margin:0;
+	padding:0;
+	overflow: hidden;
+}
+
+.popup-optin2-image img {
+	object-fit: cover;
+  height: 100%;
+	object-position: -260px;
+	margin:0;
+	padding:0;
+}
+
+.popup-optin2 {
+
+	border-radius: 0;
+	border-color: white;
+	border-width: 0px;
+	border-style: solid;
+	flex-basis: 467px;
+}
+
+
+.popup-optin2 .formulario-en-post {
+	border-width: 0;
+	background-color: inherit;
+	box-shadow: none;
+	margin:0;
+	padding: 5px 25px;
+	
+	
+}
+
+
+.popup-optin2 .custom-text-wrapper {
+	color:var(--nv-primary-accent);
+	font-size: 18px;
+	font-weight: 700;
+}
+
+
+.popup-optin2 .custom-text-wrapper2 {
+	color:#222;
+	font-size: 16px;
+	padding-bottom:10px; 
+}
+
+
+
+.popup-optin2 div.submit-wrapper .btn{
+
+	margin: 0px;
+	margin-top: -16px;
+	font-size: 14px;
+
+}
+
+.popup-optin2 .tooltip {
+	font-size: 12px;
+}
+
+.popup-optin2 .tooltip .tooltiptext {
+	font-size: 12px;
+	width: 300px;
+}
+
+
+.popup-optin2 .div-boton-cerrar-popup {
+	background-color: lightgray;
+	border: solid 1px lightgray;
+	margin-top: 12px;
+	border-radius: 3px;
+	padding: 4px;
+	text-align: center;
+	width: 75%;
+	margin-bottom: 20px;
+
+}
+
+.popup-optin2 .div-boton-cerrar-popup a {
+	color: #666;
+}
+
+.popup-optin2 .div-boton-cerrar-popup a:hover {
+	color: #222;
+}
+
+
+@media screen and (max-width: 480px) {
+	
+	
+	.popup-optin2-outer {
+		flex-flow: column;
+	}
+	
+	.popup-optin2-image {
+		flex-basis: initial;
+		height:80px;
+		
+	}
+
+	.popup-optin2-image img {
+			object-fit: cover;
+			object-position: 0px -50px;		
+			width: 100%;
+	}
+	
+		.popup-optin2 .div-boton-cerrar-popup {
+		font-size: 13px;
+		margin: auto;
+		margin-top:10px;
+	}
+	
+
+	
+		.popup-optin2 .custom-text-wrapper {
+		font-size: 14px;
+	}
+
+	.popup-optin2 .formulario-en-post {
+			padding: 5px 5px;
+			text-align: center;
+			align-items: center;
+		
+	}
+	
+
+
+	.popup-optin2 .custom-text-wrapper2 {
+		color:#222;
+		font-size: 14px;
+		padding-bottom:10px; 
+	}
+	
+	.popup-optin2 div.submit-wrapper .btn{	font-size: 12px;	}
+	
+}
+
+
+
+
+
+/* suscription yellow boxes */
+
+.suscription-text-link {
+	
+	background-color: #ff9;
+	border: solid 1px orange;
+	padding: 20px 15px;
+}
+
+.suscription-button-div {
+	background-color: #ff9;
+	border: solid 1px orange;
+	padding: 0 11px;
+	margin-top: 20px;
+}
+
+.suscription-button-div {
+	background-color: #ff9;
+	border: solid 1px orange;
+	padding: 0 11px;
+	margin-top: 20px;
+}
+
+
+
+.suscription-button-div .rejilla-simple {
+	display: flex;
+	align-items: center;
+	flex-flow: row;
+	
+}
+
+@media screen and (max-width: 480px) {
+.suscription-button-div .rejilla-simple {	flex-flow: column;}
+}
+
+.elemento-rejilla-simple {
+	
+}
+
+a.tf_popup {
+	width: 170px;
+	text-align: center;
+	font-weight: 700;
+
+}
+
+#qc-cmp2-persistent-link:hover {
+	color:white;
+}
+
+.widget {
+	margin-bottom: 7px;
+	padding: 0;
+}
+
+@media screen and (max-width: 1024px) {
+	.flex-column-reverse {
+		flex-direction: column-reverse;
+	}
+}
+
+
+
+.encabezado-con-foto {
+  margin: 20px 20px 0 20px;
+  display: flex;
+}
+.encabezado-con-foto-imagen {
+  height: auto;
+  min-width: 100px;
+  max-width: 100px;
+  border-radius: 50%;
+}
+.encabezado-con-foto-presentacion {
+  margin: auto 0 auto 20px;
+}
+
+@media(min-width:960px) {
+ .builder-item--primary-menu {
+	 width:100%;
+ }
+	
+	#nv-primary-navigation-main {
+		justify-content:space-around;
+	}
+}
+
+#block-46 > div > div > p {
+	padding: 2px;
+	margin: 0px;
+}
+
+
+.exit-intent-monge-malo-container {
+
+	margin: 30px;
+	display: flex;
+}
+
+.exit-intent-monge-malo-button {
+	background-color: white;
+	margin:auto;
+	padding: 20px;
+	overflow: hidden;
+	text-wrap:none;
+	
+}
+
+.exit-intent-monge-malo-text {
+	font-weight: 700;
+	font-size: 20px;
+}</style><style id="theia-sticky-sidebar-stylesheet-TSS">.theiaStickySidebar:after {content: ""; display: table; clear: both;}</style><style type="text/css">[id^=root], [id^=docs], .cc_cursor, body, .ogdlpmhglpejoiomcodnpjnfgcpmgale_default, body, html, input[type="date"], input[type="time"], input[type="datetime-local"], input[type="month"], input::-webkit-contacts-auto-fill-button, input:read-only {cursor: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAA3RJREFUSEutlW1Mm1UYhq/aFmIFQksBgaV0bKWTbjNZmTNbUGOcAyKTTSZiMuefqUuMWzYlMzFjzsUoZEbjr4W5RM0ypXOAIBCmQDbiolDjRxe+04VCaaGlrHwWSmsoYVBLV2o4P8957vt67nPec14BeQnTkg3Sm95h15npu3f/QM8c6zgEHNvojC/ZGy1stZByc/Izfae+msaxW4B3PTgCTqk/5T1tcURiNI9aRGy/4Rlu0F2/7a6x5q8PoEihoSDNwMHNPj8BAi5MHOBccfG9eLfkdI+l4xo147b/CxOQLVdzSNXOa49FIXrovo/KHc/WNiERevvP39dV/MiY/RK3mQ4XJOCZ2Fh2J13m5I4DxD3sp48iEsmEgM+NubMlX5Z09Jg6C2kY7woHIvAVH0w4yydZJaikq2rFCDnBc/zzRS2mzt4bd0y9bzFp7acFdyjYIiBXdpyXt5RxJEP8IEEmSvaMpOCpN5qvN1VdHRwavESjvfNBmkXAwjnsiG/k3G4FwsWpYCMCEWp3Auet+6it+qG/vPbrcqLtpeiYXU2z7JYnN3AqU8PTG0Klvr9+mlyUejdfXSmfMY+Ynxx0DPTz0z3HSoNlQE5cJUc0+RSoCJVipcETbKSQncxVdbt/69A3VLZWf0vdaMVSzTLgebmWrKR2itSwKXbNKRYKIxGRhYqPx16gv6fPWXD2cDN1dt9F9d/wV5K9nNRCZuJ/V0IDvV7ecOzi2HTW7NHSt5vajb+8RA1T/oCiZAMF6RqylSARhTZdqjDY4G/bpNA4rvP+av7TMzVykRZmAhO8npyPWl7Jm4+DNDI0YHgKSttczHGCbkczHuEAjdbJ1Q95YXafTENGnIHCdNiVFBww5oKKriEqe1uIHj2Mjvlgxf5blB2rZGtCC+nSVI5uW11jsHmp7mui1fw+Dfa2UDH9AVrE7EwrI0N2nP1pkBrjr9d1Q73xKrb5d6gxr+mFDby2ObIzPJv6oc/8kGoR4PZAdd8E33V9xDVLaaiug5/Bwkqu9FWeUlxEERPlS/GIGJpNLi4bLuASnEc3ENaTHZggL1lCSqQebeIWtsnBPgPf3DHgdO2hftQZTveBn+mSOkf+F/mbtjM7D7cGTVQMKcI1DnwqVjrkyMrYq3wXk9NCj+NFau2/rzcgBonYgYcyHNYP1vJjCdbAv72FNCj80hZcAAAAAElFTkSuQmCC") 0 0 , auto !important; }[role^=button], button, .cc_pointer, [type="search"]::-webkit-search-cancel-button, a, select, [type="search"]::-webkit-search-decoration, .paper-button, .ytp-progress-bar-container, input[type=submit], :link, :visited, a > *, img, button, ::-webkit-scrollbar-button, .ogdlpmhglpejoiomcodnpjnfgcpmgale_pointer, ::-webkit-file-upload-button, button, .ytp-volume-panel, #myogdlpmhglpejoiomcodnpjnfgcpmgale .icon { cursor: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAA1JJREFUSEu1lntMU1ccxz99SVBLiS22FEoJVJHKH0tlc4hRCGSA+MKITDcf8a+FDBPmHzMSXzHLRBPEJU6XLJux1CzsDx8xJr4CaJCYOqM4VrUK+MDKY3VYeRX0mltk6kofJuP8c0/O+Z7f5/c6914J/x1LlJp4vanBqIqb1fWss8r5j72C3/H66cJckPjpCtQVuYc37S5MyJS4f7s+sPvXSgvn/r4dpj0/mT8gf9pODufuMBlN5NlkHLQeTOOsu+V/B0QZtcTbnvKX9eLEAGRGFXKbkyFr88QAMEaBzQFWx8QCTPXDjxVyefyQd/BIa8ej7xJ0+oheT/9Ar9v5kHpGQtVmtMg5U7QMRvbT2OPhTZHHItiQUUxykom+C/ewX21qz0tbkNjqeuBqaG5c4Whz5IPUxSSOcarHMx5MQlFMMTM136NUjNDYcQBB0Ipd9G+K5schM0ZjblbwTCOQok9mX38RpdtLH/1Qttfw1N05uK/2QNnlPad/Hh+wKlZgYxpkxcP2Kw5u9RznUM7WdwG+eXM3vqcqglKyOdd0nu4MJT/yJfvLt9qvVV/8ZHzA57HdrJ+tIdsAHR43X9e1cignPRhARST9Te0MZ2gpJp0b5UftzuorAQAbjV/wUUwN61LhhVegrE5gf5bUB+gdgskKUEjfi8DnadMTyNAjwgbKz9u91bcDAArVqaSob7LlYwWqSfDTLViaNJqOYON6J1i0o4ryOjvV9wMAcpRqLPoasg35FCRC7R2fZxiUwQFDLyFCFgYAJKzQ7SJTv41vLND+HGIiYYoiVIu/3Q8agSjLUy8jN+EIixKjMavDNzymDAmYg4I0w00WJ6WycsYEAESTBWoba81rfAX+kPSIZzc3XKLKuXD8ezC2OndaFAtjeilJAcv08KN46IGalhIq/qwNDhB3V8e2UDLLzGdGiJSHhgjAcWcXVsc8TnTdDw1YrssiJbqOIhPM1YUGPOkTXy9V3HiwhT8YDg0AKYWaTXwau4cN5gjipoLE/6vqM+Tqg831Z7jrWh7IuCjzP12MjD71V8zRbWNRopZ0Lcilb5177oVLj19wsvUX7rV/Sz2DwUIN4J7YVdOTMSkzGXlVicBovgThJZrJlbgGjuJpawvnd+Y1gwo5KP0TYS8AAAAASUVORK5CYII=") 6 1, auto !important; } * {cursor: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAA3RJREFUSEutlW1Mm1UYhq/aFmIFQksBgaV0bKWTbjNZmTNbUGOcAyKTTSZiMuefqUuMWzYlMzFjzsUoZEbjr4W5RM0ypXOAIBCmQDbiolDjRxe+04VCaaGlrHwWSmsoYVBLV2o4P8957vt67nPec14BeQnTkg3Sm95h15npu3f/QM8c6zgEHNvojC/ZGy1stZByc/Izfae+msaxW4B3PTgCTqk/5T1tcURiNI9aRGy/4Rlu0F2/7a6x5q8PoEihoSDNwMHNPj8BAi5MHOBccfG9eLfkdI+l4xo147b/CxOQLVdzSNXOa49FIXrovo/KHc/WNiERevvP39dV/MiY/RK3mQ4XJOCZ2Fh2J13m5I4DxD3sp48iEsmEgM+NubMlX5Z09Jg6C2kY7woHIvAVH0w4yydZJaikq2rFCDnBc/zzRS2mzt4bd0y9bzFp7acFdyjYIiBXdpyXt5RxJEP8IEEmSvaMpOCpN5qvN1VdHRwavESjvfNBmkXAwjnsiG/k3G4FwsWpYCMCEWp3Auet+6it+qG/vPbrcqLtpeiYXU2z7JYnN3AqU8PTG0Klvr9+mlyUejdfXSmfMY+Ynxx0DPTz0z3HSoNlQE5cJUc0+RSoCJVipcETbKSQncxVdbt/69A3VLZWf0vdaMVSzTLgebmWrKR2itSwKXbNKRYKIxGRhYqPx16gv6fPWXD2cDN1dt9F9d/wV5K9nNRCZuJ/V0IDvV7ecOzi2HTW7NHSt5vajb+8RA1T/oCiZAMF6RqylSARhTZdqjDY4G/bpNA4rvP+av7TMzVykRZmAhO8npyPWl7Jm4+DNDI0YHgKSttczHGCbkczHuEAjdbJ1Q95YXafTENGnIHCdNiVFBww5oKKriEqe1uIHj2Mjvlgxf5blB2rZGtCC+nSVI5uW11jsHmp7mui1fw+Dfa2UDH9AVrE7EwrI0N2nP1pkBrjr9d1Q73xKrb5d6gxr+mFDby2ObIzPJv6oc/8kGoR4PZAdd8E33V9xDVLaaiug5/Bwkqu9FWeUlxEERPlS/GIGJpNLi4bLuASnEc3ENaTHZggL1lCSqQebeIWtsnBPgPf3DHgdO2hftQZTveBn+mSOkf+F/mbtjM7D7cGTVQMKcI1DnwqVjrkyMrYq3wXk9NCj+NFau2/rzcgBonYgYcyHNYP1vJjCdbAv72FNCj80hZcAAAAAElFTkSuQmCC") 0 0 , auto }a, button, [type^=button], [role^=button]   { cursor: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAA1JJREFUSEu1lntMU1ccxz99SVBLiS22FEoJVJHKH0tlc4hRCGSA+MKITDcf8a+FDBPmHzMSXzHLRBPEJU6XLJux1CzsDx8xJr4CaJCYOqM4VrUK+MDKY3VYeRX0mltk6kofJuP8c0/O+Z7f5/c6914J/x1LlJp4vanBqIqb1fWss8r5j72C3/H66cJckPjpCtQVuYc37S5MyJS4f7s+sPvXSgvn/r4dpj0/mT8gf9pODufuMBlN5NlkHLQeTOOsu+V/B0QZtcTbnvKX9eLEAGRGFXKbkyFr88QAMEaBzQFWx8QCTPXDjxVyefyQd/BIa8ej7xJ0+oheT/9Ar9v5kHpGQtVmtMg5U7QMRvbT2OPhTZHHItiQUUxykom+C/ewX21qz0tbkNjqeuBqaG5c4Whz5IPUxSSOcarHMx5MQlFMMTM136NUjNDYcQBB0Ipd9G+K5schM0ZjblbwTCOQok9mX38RpdtLH/1Qttfw1N05uK/2QNnlPad/Hh+wKlZgYxpkxcP2Kw5u9RznUM7WdwG+eXM3vqcqglKyOdd0nu4MJT/yJfvLt9qvVV/8ZHzA57HdrJ+tIdsAHR43X9e1cignPRhARST9Te0MZ2gpJp0b5UftzuorAQAbjV/wUUwN61LhhVegrE5gf5bUB+gdgskKUEjfi8DnadMTyNAjwgbKz9u91bcDAArVqaSob7LlYwWqSfDTLViaNJqOYON6J1i0o4ryOjvV9wMAcpRqLPoasg35FCRC7R2fZxiUwQFDLyFCFgYAJKzQ7SJTv41vLND+HGIiYYoiVIu/3Q8agSjLUy8jN+EIixKjMavDNzymDAmYg4I0w00WJ6WycsYEAESTBWoba81rfAX+kPSIZzc3XKLKuXD8ezC2OndaFAtjeilJAcv08KN46IGalhIq/qwNDhB3V8e2UDLLzGdGiJSHhgjAcWcXVsc8TnTdDw1YrssiJbqOIhPM1YUGPOkTXy9V3HiwhT8YDg0AKYWaTXwau4cN5gjipoLE/6vqM+Tqg831Z7jrWh7IuCjzP12MjD71V8zRbWNRopZ0Lcilb5177oVLj19wsvUX7rV/Sz2DwUIN4J7YVdOTMSkzGXlVicBovgThJZrJlbgGjuJpawvnd+Y1gwo5KP0TYS8AAAAASUVORK5CYII=") 6 1, auto }</style><style type="text/css"> .qc-cmp-button.qc-cmp-secondary-button:hover {    background-color: #368bd6 !important;    border-color: transparent !important;  }  .qc-cmp-button.qc-cmp-secondary-button:hover {    color: #ffffff !important;  }  .qc-cmp-button.qc-cmp-secondary-button {    color: #368bd6 !important;  }  .qc-cmp-button.qc-cmp-secondary-button {    background-color: #eee !important;    border-color: transparent !important;  } </style></head><body class="post-template-default single single-post postid-3157 single-format-standard wp-custom-logo nv-sidebar-right menu_sidebar_slide_left" id="neve_body">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-dark-grayscale"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tableValues="0 0.49803921568627"></fefuncr><fefuncg type="table" tableValues="0 0.49803921568627"></fefuncg><fefuncb type="table" tableValues="0 0.49803921568627"></fefuncb><fefunca type="table" tableValues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-grayscale"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tableValues="0 1"></fefuncr><fefuncg type="table" tableValues="0 1"></fefuncg><fefuncb type="table" tableValues="0 1"></fefuncb><fefunca type="table" tableValues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-yellow"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tableValues="0.54901960784314 0.98823529411765"></fefuncr><fefuncg type="table" tableValues="0 1"></fefuncg><fefuncb type="table" tableValues="0.71764705882353 0.25490196078431"></fefuncb><fefunca type="table" tableValues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-red"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tableValues="0 1"></fefuncr><fefuncg type="table" tableValues="0 0.27843137254902"></fefuncg><fefuncb type="table" tableValues="0.5921568627451 0.27843137254902"></fefuncb><fefunca type="table" tableValues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-midnight"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tableValues="0 0"></fefuncr><fefuncg type="table" tableValues="0 0.64705882352941"></fefuncg><fefuncb type="table" tableValues="0 1"></fefuncb><fefunca type="table" tableValues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-magenta-yellow"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tableValues="0.78039215686275 1"></fefuncr><fefuncg type="table" tableValues="0 0.94901960784314"></fefuncg><fefuncb type="table" tableValues="0.35294117647059 0.47058823529412"></fefuncb><fefunca type="table" tableValues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-green"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tableValues="0.65098039215686 0.40392156862745"></fefuncr><fefuncg type="table" tableValues="0 1"></fefuncg><fefuncb type="table" tableValues="0.44705882352941 0.4"></fefuncb><fefunca type="table" tableValues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-orange"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tableValues="0.098039215686275 1"></fefuncr><fefuncg type="table" tableValues="0 0.66274509803922"></fefuncg><fefuncb type="table" tableValues="0.84705882352941 0.41960784313725"></fefuncb><fefunca type="table" tableValues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><div class="wrapper"><header class="header">
+<a class="neve-skip-link show-on-focus" href="https://www.codigopiton.com/como-obtener-la-hora-actual-en-python/#content">
+Saltar al contenido </a><div id="header-grid" class="hfg_header site-header"><nav class="header--row header-main hide-on-mobile hide-on-tablet layout-full-contained nv-navbar header--row" data-row-id="main" data-show-on="desktop"><div class="header--row-inner header-main-inner"><div class="container"><div class="row row--wrapper" data-section="hfg_header_layout_main"><div class="builder-item hfg-item-first col-4 desktop-left"><div class="item--inner builder-item--logo" data-section="title_tagline" data-item-id="logo"><div class="site-logo">
+<a class="brand" href="https://www.codigopiton.com/" title="Código Pitón" aria-label="Código Pitón"><img width="723" height="120" src="./Cómo Obtener la Hora Actual en Python - Código Pitón_files/codigo_piton_logo.png" class="neve-site-logo skip-lazy" alt="Código Pitón - Python en Español" decoding="async" data-variant="logo" srcset="https://www.codigopiton.com/wp-content/uploads/2021/12/codigo_piton_logo.png 723w, https://www.codigopiton.com/wp-content/uploads/2021/12/codigo_piton_logo-300x50.png 300w" sizes="(max-width: 723px) 100vw, 723px"></a></div></div></div><div class="builder-item has-nav hfg-item-last col-8 desktop-right hfg-is-group"><div class="item--inner builder-item--primary-menu has_menu" data-section="header_menu_primary" data-item-id="primary-menu"><div class="nv-nav-wrap"><div role="navigation" class="nav-menu-primary" aria-label="Menú principal"><ul id="nv-primary-navigation-main" class="primary-menu-ul nav-ul menu-"><li id="menu-item-2046" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2046"><a href="https://www.codigopiton.com/la-hoja-de-referencia-de-python/">🚀&nbsp;Despega con Python</a></li><li id="menu-item-3498" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3498"><a href="https://www.codigopiton.com/sobre-mi/">Sobre mí</a></li><li id="menu-item-3274" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3274"><a href="https://www.codigopiton.com/como-obtener-la-hora-actual-en-python/#"><span class="menu-item-title-wrap dd-title">Recursos</span><div role="none" tabindex="-1" class="caret-wrap 3" style="margin-left:5px;"><span class="caret"><svg aria-label="Desplegable" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg></span></div></a><ul class="sub-menu"><li id="menu-item-3608" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3608"><a href="https://turing.grsm.io/cp-remote-jobs9205">Últimos Empleos Remotos de Desarrollador</a></li><li id="menu-item-3420" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-3420"><a href="https://www.codigopiton.com/como-ganar-dinero-con-python/">Cómo Ganar Dinero con Python: 21 maneras</a></li><li id="menu-item-2900" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2900"><a href="https://www.codigopiton.com/como-contratar-programador-freelance-de-python/">Contrata a un programador de Python</a></li><li id="menu-item-3275" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-3275"><a href="https://www.codigopiton.com/10-cosas-que-necesitas-para-aprender-python/">Las 10 Cosas que Necesitas para Aprender Python</a></li></ul></li><li id="menu-item-2689" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2689"><a href="https://www.codigopiton.com/como-obtener-la-hora-actual-en-python/#"><span class="menu-item-title-wrap dd-title">Descargas</span><div role="none" tabindex="-1" class="caret-wrap 8" style="margin-left:5px;"><span class="caret"><svg aria-label="Desplegable" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg></span></div></a><ul class="sub-menu"><li id="menu-item-2800" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2800"><a href="https://www.codigopiton.com/la-hoja-de-referencia-de-python/">La Hoja de Referencia de Python</a></li><li id="menu-item-2799" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2799"><a href="https://www.codigopiton.com/el-tutorial-basico-interactivo-de-python/">El Tutorial Básico Interactivo de Python</a></li></ul></li><li id="menu-item-2045" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2045"><a href="https://www.codigopiton.com/como-obtener-la-hora-actual-en-python/#"><span class="menu-item-title-wrap dd-title">Categorías</span><div role="none" tabindex="-1" class="caret-wrap 11" style="margin-left:5px;"><span class="caret"><svg aria-label="Desplegable" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg></span></div></a><ul class="sub-menu"><li id="menu-item-472" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-472"><a href="https://www.codigopiton.com/category/fundamentos-de-python/">Fundamentos</a></li><li id="menu-item-2635" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-2635"><a href="https://www.codigopiton.com/category/dudas-comunes/">Dudas Comunes</a></li><li id="menu-item-473" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-473"><a href="https://www.codigopiton.com/category/general/">General</a></li><li id="menu-item-475" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-475"><a href="https://www.codigopiton.com/category/librerias/">Librerías</a></li><li id="menu-item-474" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-474"><a href="https://www.codigopiton.com/category/diseno-de-software/">Diseño de Software</a></li></ul></li></ul></div></div></div><div class="item--inner builder-item--header_search_responsive" data-section="header_search_responsive" data-item-id="header_search_responsive"><div class="nv-search-icon-component"><div class="menu-item-nav-search minimal">
+<a aria-label="Buscar" href="https://www.codigopiton.com/como-obtener-la-hora-actual-en-python/#" class="nv-icon nv-search">
+<svg width="15" height="15" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1216 832q0-185-131.5-316.5t-316.5-131.5-316.5 131.5-131.5 316.5 131.5 316.5 316.5 131.5 316.5-131.5 131.5-316.5zm512 832q0 52-38 90t-90 38q-54 0-90-38l-343-342q-179 124-399 124-143 0-273.5-55.5t-225-150-150-225-55.5-273.5 55.5-273.5 150-225 225-150 273.5-55.5 273.5 55.5 225 150 150 225 55.5 273.5q0 220-124 399l343 343q37 37 37 90z"></path></svg>
+</a><div class="nv-nav-search" aria-label="search"><div class="form-wrap "><form role="search" method="get" class="search-form" action="https://www.codigopiton.com/">
+<label>
+<span class="screen-reader-text">Buscar...</span>
+</label>
+<input type="search" class="search-field" aria-label="Buscar" placeholder="Buscar..." value="" name="s">
+<button type="submit" class="search-submit nv-submit" aria-label="Buscar">
+<span class="nv-search-icon-wrap">
+<span class="nv-icon nv-search">
+<svg width="15" height="15" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1216 832q0-185-131.5-316.5t-316.5-131.5-316.5 131.5-131.5 316.5 131.5 316.5 316.5 131.5 316.5-131.5 131.5-316.5zm512 832q0 52-38 90t-90 38q-54 0-90-38l-343-342q-179 124-399 124-143 0-273.5-55.5t-225-150-150-225-55.5-273.5 55.5-273.5 150-225 225-150 273.5-55.5 273.5 55.5 225 150 150 225 55.5 273.5q0 220-124 399l343 343q37 37 37 90z"></path></svg>
+</span></span>
+</button></form></div></div></div></div></div></div></div></div></div></nav><nav class="header--row header-main hide-on-desktop layout-full-contained nv-navbar header--row" data-row-id="main" data-show-on="mobile"><div class="header--row-inner header-main-inner"><div class="container"><div class="row row--wrapper" data-section="hfg_header_layout_main"><div class="builder-item hfg-item-first col-7 mobile-left tablet-left"><div class="item--inner builder-item--logo" data-section="title_tagline" data-item-id="logo"><div class="site-logo">
+<a class="brand" href="https://www.codigopiton.com/" title="Código Pitón" aria-label="Código Pitón"><img width="723" height="120" src="./Cómo Obtener la Hora Actual en Python - Código Pitón_files/codigo_piton_logo.png" class="neve-site-logo skip-lazy" alt="Código Pitón - Python en Español" decoding="async" data-variant="logo" srcset="https://www.codigopiton.com/wp-content/uploads/2021/12/codigo_piton_logo.png 723w, https://www.codigopiton.com/wp-content/uploads/2021/12/codigo_piton_logo-300x50.png 300w" sizes="(max-width: 723px) 100vw, 723px"></a></div></div></div><div class="builder-item hfg-item-last col-4 mobile-right tablet-right offset-1 hfg-is-group"><div class="item--inner builder-item--header_search_responsive" data-section="header_search_responsive" data-item-id="header_search_responsive"><div class="nv-search-icon-component"><div class="menu-item-nav-search minimal">
+<a aria-label="Buscar" href="https://www.codigopiton.com/como-obtener-la-hora-actual-en-python/#" class="nv-icon nv-search">
+<svg width="15" height="15" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1216 832q0-185-131.5-316.5t-316.5-131.5-316.5 131.5-131.5 316.5 131.5 316.5 316.5 131.5 316.5-131.5 131.5-316.5zm512 832q0 52-38 90t-90 38q-54 0-90-38l-343-342q-179 124-399 124-143 0-273.5-55.5t-225-150-150-225-55.5-273.5 55.5-273.5 150-225 225-150 273.5-55.5 273.5 55.5 225 150 150 225 55.5 273.5q0 220-124 399l343 343q37 37 37 90z"></path></svg>
+</a><div class="nv-nav-search" aria-label="search"><div class="form-wrap "><form role="search" method="get" class="search-form" action="https://www.codigopiton.com/">
+<label>
+<span class="screen-reader-text">Buscar...</span>
+</label>
+<input type="search" class="search-field" aria-label="Buscar" placeholder="Buscar..." value="" name="s">
+<button type="submit" class="search-submit nv-submit" aria-label="Buscar">
+<span class="nv-search-icon-wrap">
+<span class="nv-icon nv-search">
+<svg width="15" height="15" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1216 832q0-185-131.5-316.5t-316.5-131.5-316.5 131.5-131.5 316.5 131.5 316.5 316.5 131.5 316.5-131.5 131.5-316.5zm512 832q0 52-38 90t-90 38q-54 0-90-38l-343-342q-179 124-399 124-143 0-273.5-55.5t-225-150-150-225-55.5-273.5 55.5-273.5 150-225 225-150 273.5-55.5 273.5 55.5 225 150 150 225 55.5 273.5q0 220-124 399l343 343q37 37 37 90z"></path></svg>
+</span></span>
+</button></form></div></div></div></div></div><div class="item--inner builder-item--nav-icon" data-section="header_menu_icon" data-item-id="nav-icon"><div class="menu-mobile-toggle item-button navbar-toggle-wrapper">
+<button type="button" class=" navbar-toggle" value="Menú de navegación" aria-label="Menú de navegación ">
+<span class="bars">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</span>
+<span class="screen-reader-text">Menú de navegación</span>
+</button></div></div></div></div></div></div></nav><div id="header-menu-sidebar" class="header-menu-sidebar menu-sidebar-panel slide_left hfg-pe" data-row-id="sidebar"><div id="header-menu-sidebar-bg" class="header-menu-sidebar-bg"><div class="close-sidebar-panel navbar-toggle-wrapper">
+<button type="button" class="hamburger is-active  navbar-toggle active" value="Menú de navegación" aria-label="Menú de navegación ">
+<span class="bars">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</span>
+<span class="screen-reader-text">
+Menú de navegación </span>
+</button></div><div id="header-menu-sidebar-inner" class="header-menu-sidebar-inner "><div class="builder-item has-nav hfg-item-last hfg-item-first col-12 mobile-left tablet-left desktop-right"><div class="item--inner builder-item--primary-menu has_menu" data-section="header_menu_primary" data-item-id="primary-menu"><div class="nv-nav-wrap"><div role="navigation" class="nav-menu-primary" aria-label="Menú principal"><ul id="nv-primary-navigation-sidebar" class="primary-menu-ul nav-ul menu-"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2046"><a href="https://www.codigopiton.com/la-hoja-de-referencia-de-python/">🚀&nbsp;Despega con Python</a></li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3498"><a href="https://www.codigopiton.com/sobre-mi/">Sobre mí</a></li><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3274"><a href="https://www.codigopiton.com/como-obtener-la-hora-actual-en-python/#"><span class="menu-item-title-wrap dd-title">Recursos</span><div role="none" tabindex="0" class="caret-wrap 3" style="margin-left:5px;"><span class="caret"><svg aria-label="Desplegable" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg></span></div></a><ul class="sub-menu" style="right: auto; left: 0px;"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3608"><a href="https://turing.grsm.io/cp-remote-jobs9205">Últimos Empleos Remotos de Desarrollador</a></li><li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-3420"><a href="https://www.codigopiton.com/como-ganar-dinero-con-python/">Cómo Ganar Dinero con Python: 21 maneras</a></li><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2900"><a href="https://www.codigopiton.com/como-contratar-programador-freelance-de-python/">Contrata a un programador de Python</a></li><li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-3275"><a href="https://www.codigopiton.com/10-cosas-que-necesitas-para-aprender-python/">Las 10 Cosas que Necesitas para Aprender Python</a></li></ul></li><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2689"><a href="https://www.codigopiton.com/como-obtener-la-hora-actual-en-python/#"><span class="menu-item-title-wrap dd-title">Descargas</span><div role="none" tabindex="0" class="caret-wrap 8" style="margin-left:5px;"><span class="caret"><svg aria-label="Desplegable" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg></span></div></a><ul class="sub-menu" style="right: auto; left: 0px;"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2800"><a href="https://www.codigopiton.com/la-hoja-de-referencia-de-python/">La Hoja de Referencia de Python</a></li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2799"><a href="https://www.codigopiton.com/el-tutorial-basico-interactivo-de-python/">El Tutorial Básico Interactivo de Python</a></li></ul></li><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2045"><a href="https://www.codigopiton.com/como-obtener-la-hora-actual-en-python/#"><span class="menu-item-title-wrap dd-title">Categorías</span><div role="none" tabindex="0" class="caret-wrap 11" style="margin-left:5px;"><span class="caret"><svg aria-label="Desplegable" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg></span></div></a><ul class="sub-menu" style="right: auto; left: 0px;"><li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-472"><a href="https://www.codigopiton.com/category/fundamentos-de-python/">Fundamentos</a></li><li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-2635"><a href="https://www.codigopiton.com/category/dudas-comunes/">Dudas Comunes</a></li><li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-473"><a href="https://www.codigopiton.com/category/general/">General</a></li><li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-475"><a href="https://www.codigopiton.com/category/librerias/">Librerías</a></li><li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-474"><a href="https://www.codigopiton.com/category/diseno-de-software/">Diseño de Software</a></li></ul></li></ul></div></div></div></div></div></div></div><div class="header-menu-sidebar-overlay hfg-ov hfg-pe"></div></div></header><main id="content" class="neve-main"><div class="container single-post-container"><div class="row"><article id="post-3157" class="nv-single-post-wrap col post-3157 post type-post status-publish format-standard has-post-thumbnail hentry category-dudas-comunes category-librerias"><div class="code-block code-block-7" style="margin: 8px 0; clear: both;"><div id="100591-1"> <script src="https://ads.themoneytizer.com/s/gen.js?type=1"></script> <script src="https://ads.themoneytizer.com/s/requestform.js?siteId=100591&amp;formatId=1"></script> </div></div><div class="entry-header"><div class="nv-title-meta-wrap"><small class="neve-breadcrumbs-wrapper"></small><h1 class="title entry-title">Cómo Obtener la Hora Actual en Python</h1><ul class="nv-meta-list"><li class="meta category "><a href="https://www.codigopiton.com/category/dudas-comunes/" rel="category tag">Dudas Comunes</a>, <a href="https://www.codigopiton.com/category/librerias/" rel="category tag">Librerías</a></li><li class="meta author vcard last"><span class="author-name fn">por <a href="https://www.codigopiton.com/author/python/" title="Entradas de Juan (Código Pitón)" rel="author">Juan (Código Pitón)</a></span></li></ul></div></div><div class="nv-thumb-wrap"><img width="930" height="327" src="./Cómo Obtener la Hora Actual en Python - Código Pitón_files/como-obtener-la-hora-actual-en-python.jpg" class="skip-lazy wp-post-image" alt="Cómo obtener la hora actual en Python Header" decoding="async" srcset="https://www.codigopiton.com/wp-content/uploads/2022/10/como-obtener-la-hora-actual-en-python.jpg 930w, https://www.codigopiton.com/wp-content/uploads/2022/10/como-obtener-la-hora-actual-en-python-300x105.jpg 300w, https://www.codigopiton.com/wp-content/uploads/2022/10/como-obtener-la-hora-actual-en-python-768x270.jpg 768w" sizes="(max-width: 930px) 100vw, 930px"></div><div class="nv-content-wrap entry-content"><p>Suele suceder que nos encontramos desarrollando algún proyecto y nos surge <strong>la necesidad de obtener la hora actual</strong>. Por ejemplo, para registrar la hora de una compra. O para comprobar cuándo debemos encender la calefacción. Normalmente la podemos obtener el sistema o de un servidor de tiempo (<em>NTP,</em> <em>Network Time Protocol</em>). Te explico aquí cómo puedes obtener la hora actual en Python.</p><p><strong>Para obtener la hora actual en Python se utiliza la función <code>now</code> de la clase <code>datetime</code> de la librería <code>datetime</code>. Podemos indicarle por parámetro una zona horaria. Es posible obtener la hora de un servidor de NTP utilizando la librería <code>ntplib</code>. Para formatear la hora se utiliza la función <code>strftime</code>.</strong></p><p>Bueno, sin más dilación, vamos desgranando todo esto paso a paso.</p><div class="ub_table-of-contents" data-showtext="show" data-hidetext="hide" data-scrolltype="auto" id="ub_table-of-contents-3c54d71b-dd4b-4a27-ac8b-8854da2e65a5" data-initiallyhideonmobile="false" data-initiallyshow="true"><div class="ub_table-of-contents-header-container"><div class="ub_table-of-contents-header"><div class="ub_table-of-contents-title">Contenido</div></div></div><div class="ub_table-of-contents-extra-container"><div class="ub_table-of-contents-container ub_table-of-contents-1-column "><ul><li><a href="https://www.codigopiton.com/como-obtener-la-hora-actual-en-python/#0-obtener-la-hora-actual-del-sistema">Obtener la hora actual del sistema</a></li><li><a href="https://www.codigopiton.com/como-obtener-la-hora-actual-en-python/#1-obtener-la-fecha-del-sistema">Obtener la fecha del sistema</a></li><li><a href="https://www.codigopiton.com/como-obtener-la-hora-actual-en-python/#2-formatear-la-hora">Formatear la hora</a></li><li><a href="https://www.codigopiton.com/como-obtener-la-hora-actual-en-python/#3-formatear-la-fecha">Formatear la fecha</a></li><li><a href="https://www.codigopiton.com/como-obtener-la-hora-actual-en-python/#4-obtener-fecha-y-hora-actuales-por-timezone-">Obtener fecha y hora actuales por timezone</a></li><li><a href="https://www.codigopiton.com/como-obtener-la-hora-actual-en-python/#5-obtener-fecha-y-hora-actuales-de-un-servidor-ntp-en-python">Obtener fecha y hora actuales de un servidor NTP en Python</a></li><li><a href="https://www.codigopiton.com/como-obtener-la-hora-actual-en-python/#6-conclusiones">Conclusiones</a></li></ul></div></div></div><h2 id="0-obtener-la-hora-actual-del-sistema">Obtener la hora actual del sistema</h2><p>La librería estándar de Python <code>datetime</code> nos proporciona clases y funcionalidades para trabajar con fechas y horas.</p><p>Una de las principales clases que contiene es <code>datetime</code>. Esta clase está pensada <strong>para manejar tanto fechas como horas, o ambas cosas combinadas</strong>.</p><div class="ub-styled-box ub-notification-box" id="ub-styled-box-31edf12e-27fb-4215-b557-b4b416d70cc1"><p>Puede resultar un poco confuso porque coinciden los nombres de la librería con el de la clase, ambos son <code>datetime</code>. A menudo encontrarás líneas de código con la expresión <code>datetime.datetime</code>. Recuerda que el primero es la librería y el segundo el nombre de la clase.</p></div><p>La clase <code>datetime</code> posee un método de clase llamado <code>now</code> que obtiene la hora del sistema y nos la devuelve en un objeto <code>datetime</code>.</p><p>Así, con la siguiente llamada obtendrás el objeto que representa el momento actual en tu sistema y podrás operar con él:</p><pre class="wp-block-code line-numbers language-python" tabindex="0"><code lang="python" class="language-python"><span class="token keyword">import</span> datetime
+
+hora_actual <span class="token operator">=</span> datetime<span class="token punctuation">.</span>datetime<span class="token punctuation">.</span>now<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span>hora_actual<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>Si imprimimos el objeto <code>hora_actual</code> por pantalla obtenemos la siguiente salida (que depende de la hora, claro, en mi caso es esta):</p><pre class="wp-block-preformatted">2022-10-21 12:56:19.007770</pre><p>Como puedes ver, obtenemos más información que la hora porque también tenemos la fecha. Además, tenemos la fracción del segundo en el que nos encontramos hasta el nivel de microsegundos.</p><p>Vamos a ignorar de momento las fechas.</p><p>La clase <code>datetime</code> tiene cuatro atributos principales a los que podremos acceder para obtener de manera individual la hora, el minuto, el segundo y el microsegundo. Estos atributos son, respectivamente, <code>hour</code>, <code>minute</code>, <code>second</code> y <code>microsecond</code>.</p><p>Vamos, entonces, a obtener la hora actual y a mostrarla por pantalla. Después accederemos de manera individual a esos atributos y los mostraremos por pantalla también:</p><pre class="wp-block-code line-numbers language-python" tabindex="0"><code lang="python" class="language-python"><span class="token keyword">import</span> datetime
+
+hora_actual <span class="token operator">=</span> datetime<span class="token punctuation">.</span>datetime<span class="token punctuation">.</span>now<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span>hora_actual<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>hora_actual<span class="token punctuation">.</span>hour<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>hora_actual<span class="token punctuation">.</span>minute<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>hora_actual<span class="token punctuation">.</span>second<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>hora_actual<span class="token punctuation">.</span>microsecond<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>El resultado es el siguiente:</p><pre class="wp-block-preformatted">2022-10-21 13:07:04.155589
+13
+7
+4
+155589
+</pre><p>Como puedes ver, cuando imprimimos directamente el objeto obtenemos una cadena de texto formateada (más adelante veremos cómo cambiar el formato). En cambio, cuando imprimimos de manera individual los componentes, solo tenemos un valor entero (<code>int</code>) sin ningún tipo de formato, evidentemente. No obstante, puedes comprobar que los valores son los mismos.</p><p>Otra posibilidad radica en invocar al método <code>time()</code> del objeto devuelto por <code>now()</code>. Esto nos devolverá un objeto de la clase <code>time</code> que <strong>solo contiene los campos de la hora</strong>. También podemos acceder a atributos como los vistos antes. Lo vemos:</p><pre class="wp-block-code line-numbers language-python" tabindex="0"><code lang="python" class="language-python"><span class="token keyword">import</span> datetime
+
+hora_actual <span class="token operator">=</span> datetime<span class="token punctuation">.</span>datetime<span class="token punctuation">.</span>now<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>time<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span>hora_actual<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>hora_actual<span class="token punctuation">.</span>hour<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>hora_actual<span class="token punctuation">.</span>minute<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>hora_actual<span class="token punctuation">.</span>second<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>hora_actual<span class="token punctuation">.</span>microsecond<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>Y el resultado:</p><div class="code-block code-block-5" style="margin: 8px 0; clear: both;"><p style="margin-top:30px;" id="cuadro-promocion-cp" class="suscription-text-link"><a target="_blank" href="https://go.fiverr.com/visit/?bta=553117&amp;brand=fiverrcpa&amp;utm_campaign=ybox&amp;landingPage=https%3A%2F%2Fes.fiverr.com%2Fsearch%2Fgigs%3Fquery%3Dprogrammer%26source%3Dtop-bar%26ref_ctx_id%3D4b9ae844ba243048f82c9f6e2311fd12%26search_in%3Deverywhere%26search-autocomplete-original-term%3Dprogrammer">➡ Programadores desde tan <strong>solo 5$</strong>. Click aquí.</a></p> <script type="text/javascript">at = Math.floor(Math.random() * 2);
+nodo = document.getElementById("cuadro-promocion-cp");
+var texto;
+switch (at) {
+    case 0: texto = '<a target="_blank" href="https://go.fiverr.com/visit/?bta=553117&brand=fiverrcpa&utm_campaign=ybox&landingPage=https%3A%2F%2Fes.fiverr.com%2Fsearch%2Fgigs%3Fquery%3Dprogrammer%26source%3Dtop-bar%26ref_ctx_id%3D4b9ae844ba243048f82c9f6e2311fd12%26search_in%3Deverywhere%26search-autocomplete-original-term%3Dprogrammer">➡ Programadores desde tan <strong>solo 5$</strong>. Click aquí.</a>'; break;
+    case 1: texto = '<a target="_blank" href="https://go.fiverr.com/visit/?bta=553117&brand=fiverrhybrid&utm_campaign=ybox&landingPage=https%3A%2F%2Fes.fiverr.com%2Fsearch%2Fgigs%3Fquery%3Dprogrammer%26source%3Dtop-bar%26ref_ctx_id%3D4b9ae844ba243048f82c9f6e2311fd12%26search_in%3Deverywhere%26search-autocomplete-original-term%3Dprogrammer">➡ Si no te sale a ti, que te lo haga otro. <strong>Programadores desde 5$.</strong></a>'; break;
+	  case 10: texto = '<a href="#themify-popup-2805">Haz <strong>click aquí</strong> para descargar ahora tu <i>cheat sheet</i> de Python en español con ejemplos para no volver a olvidarte de la sintaxis y acelerar tu aprendizaje.</a>'; break;
+    case 11: texto = '<a target="_blank" href="https://www.codigopiton.com/como-ganar-dinero-con-python/">Haz <strong>click aquí</strong> para ver <strong>21 maneras de ganar dinero con Python</strong>.</a>'; break;
+    case 2: texto = '<a target="_blank" href="https://www.codigopiton.com/como-contratar-programador-freelance-de-python/">Haz <strong>click aquí</strong> para ver <strong>cómo contratar a un programador freelance de Python</strong> para ayudarte con tus tareas y proyectos.</a>'; break;		
+}
+
+nodo.insertAdjacentHTML('beforeend',texto);</script> </div><pre class="wp-block-preformatted">17:49:26.746729
+17
+49
+26
+746729</pre><h2 id="1-obtener-la-fecha-del-sistema">Obtener la fecha del sistema</h2><p>Como has visto, algunos atributos nos permiten acceder directamente a los componentes de la hora en el objeto <code>datetime</code>. Como puedes imaginarte, podemos hacer exactamente lo mismo <strong>para obtener los componentes de la fecha</strong> tras la llamada a <code>now()</code>.</p><p>En esta ocasión contamos con los atributos <code>day</code>, <code>month</code> y <code>year</code> para acceder, respectivamente, al día al mes y al año de la fecha actual. Lo vemos en este ejemplo:</p><pre class="wp-block-code line-numbers language-python" tabindex="0"><code lang="python" class="language-python"><span class="token keyword">import</span> datetime
+
+hora_actual <span class="token operator">=</span> datetime<span class="token punctuation">.</span>datetime<span class="token punctuation">.</span>now<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span>hora_actual<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>hora_actual<span class="token punctuation">.</span>day<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>hora_actual<span class="token punctuation">.</span>month<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>hora_actual<span class="token punctuation">.</span>year<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>Por pantalla obtenemos el siguiente resultado:</p><pre class="wp-block-preformatted">2022-10-21 17:41:00.278360
+21
+10
+2022</pre><p>Al igual que como veíamos antes, tras llamar a <code>now()</code> podemos invocar al método <code>date()</code> que nos devuelve un objeto de la clase <code>date</code> que únicamente contiene la información sobre la fecha. También tenemos disponibles los atributos comentados anteriormente:</p><pre class="wp-block-code line-numbers language-python" tabindex="0"><code lang="python" class="language-python"><span class="token keyword">import</span> datetime
+
+fecha_actual <span class="token operator">=</span> datetime<span class="token punctuation">.</span>datetime<span class="token punctuation">.</span>now<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>date<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span>fecha_actual<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>fecha_actual<span class="token punctuation">.</span>day<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>fecha_actual<span class="token punctuation">.</span>month<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>fecha_actual<span class="token punctuation">.</span>year<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>Resultado:</p><pre class="wp-block-preformatted">2022-10-21
+21
+10
+2022</pre><p>Finalmente otra manera de obtener rápidamente el objeto <code>date</code> con la fecha actual es invocando al método de clase <code>today()</code>:</p><pre class="wp-block-code line-numbers language-python" tabindex="0"><code lang="python" class="language-python"><span class="token keyword">import</span> datetime
+
+fecha_actual <span class="token operator">=</span> datetime<span class="token punctuation">.</span>date<span class="token punctuation">.</span>today<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span>fecha_actual<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><h2 id="2-formatear-la-hora">Formatear la hora</h2><p>Ahora que ya sabes obtener la hora actual en Python, quizá necesites <strong>aplicarle un formato propio</strong> para mostrarla a tu gusto donde necesites.</p><p>Para eso puedes utilizar el método <code>strftime</code> de la clase <code>datetime</code> y <code>time</code>. Dicho método devuelve una cadena de texto formateada a nuestro antojo mediante una plantilla que le podemos indicar por parámetro. Esta plantilla puede estar <strong>compuesta por cualquier texto y por códigos de formato</strong> que hacen referencia a los componentes de las horas.</p><div class="code-block code-block-8" style="margin: 8px 0; clear: both;"><div id="100591-28"></div></div><p>Veamos un ejemplo sencillo. Voy a mostrar la hora actual del sistema pero solo mostrando las horas y los minutos separados por dos puntos(:). Solo tengo que aplicar el formato <code>%H:%M</code> donde <code>%H</code> es el código de formato para mostrar la hora en formato 24h y <code>%M</code> es el código para el minuto:</p><pre class="wp-block-code line-numbers language-python" tabindex="0"><code lang="python" class="language-python"><span class="token keyword">import</span> datetime
+
+hora_actual <span class="token operator">=</span> datetime<span class="token punctuation">.</span>datetime<span class="token punctuation">.</span>now<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment"># alternativa</span>
+<span class="token comment"># hora_actual = datetime.datetime.now().time()</span>
+
+hora_formateada <span class="token operator">=</span> hora_actual<span class="token punctuation">.</span>strftime<span class="token punctuation">(</span><span class="token string">'%H:%M'</span><span class="token punctuation">)</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span>hora_actual<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>hora_formateada<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>Y obtenemos el siguiente resultado:</p><pre class="wp-block-preformatted">2022-10-21 18:06:00.827694
+18:06</pre><p>Te dejo a continuación una tabla con los principales códigos de formato disponibles y su resultado de aplicarlo a una hora determinada:</p><figure class="wp-block-table is-style-stripes"><table class="has-background" style="background-color:#b8fff300"><thead><tr><th class="has-text-align-center" data-align="center">Código de formato</th><th>Descripción</th><th class="has-text-align-center" data-align="center">Aplicado a 18:05:45</th></tr></thead><tbody><tr><td class="has-text-align-center" data-align="center"><code>%H</code></td><td>Hora en formato 24h<br>con ceros a la izquierda</td><td class="has-text-align-center" data-align="center">18</td></tr><tr><td class="has-text-align-center" data-align="center"><code>%-H</code></td><td>Hora en formato 24h</td><td class="has-text-align-center" data-align="center">18</td></tr><tr><td class="has-text-align-center" data-align="center"><code>%I</code></td><td>Hora en formato 12h<br>con ceros a la izquierda</td><td class="has-text-align-center" data-align="center">06</td></tr><tr><td class="has-text-align-center" data-align="center"><code>%-I</code></td><td>Hora en formato 12h</td><td class="has-text-align-center" data-align="center">6</td></tr><tr><td class="has-text-align-center" data-align="center"><code>%p</code></td><td>AM o PM</td><td class="has-text-align-center" data-align="center">PM</td></tr><tr><td class="has-text-align-center" data-align="center"><code>%M</code></td><td>Minuto <br>con ceros a la izquierda</td><td class="has-text-align-center" data-align="center">05</td></tr><tr><td class="has-text-align-center" data-align="center"><code>%-M</code></td><td>Minuto</td><td class="has-text-align-center" data-align="center">5</td></tr><tr><td class="has-text-align-center" data-align="center"><code>%S</code></td><td>Segundo <br>con ceros a la izquierda</td><td class="has-text-align-center" data-align="center">45</td></tr><tr><td class="has-text-align-center" data-align="center"><code>%-S</code></td><td>Segundo</td><td class="has-text-align-center" data-align="center">45</td></tr><tr><td class="has-text-align-center" data-align="center"><code>%f</code></td><td>Microsegundos<br>con ceros a la izquierda</td><td class="has-text-align-center" data-align="center">000000</td></tr></tbody></table><figcaption>Códigos de formato de horas</figcaption></figure><h2 id="3-formatear-la-fecha">Formatear la fecha</h2><p>De la misma manera que podemos formatear la hora, también podemos hacerlo con la fecha. Para ello, tenemos disponibles otros códigos de formato. Te pongo la tabla y después te muestro algún ejemplo:</p><figure class="wp-block-table is-style-stripes"><table class="has-background" style="background-color:#b8fff300"><thead><tr><th class="has-text-align-center" data-align="center">Código de formato</th><th>Descripción</th><th class="has-text-align-center" data-align="center">Aplicado a 15/07/2019</th></tr></thead><tbody><tr><td class="has-text-align-center" data-align="center"><code>%a</code></td><td>Nombre del día de la semana<br>abreviado</td><td class="has-text-align-center" data-align="center">lun</td></tr><tr><td class="has-text-align-center" data-align="center"><code>%A</code></td><td>Nombre del día de la semana</td><td class="has-text-align-center" data-align="center">lunes</td></tr><tr><td class="has-text-align-center" data-align="center"><code>%w</code></td><td>Número de día de la semana<br>(0 domingo – 6 sábado)</td><td class="has-text-align-center" data-align="center">1</td></tr><tr><td class="has-text-align-center" data-align="center"><code>%d</code></td><td>Día del mes<br>con ceros a la izquierda</td><td class="has-text-align-center" data-align="center">15</td></tr><tr><td class="has-text-align-center" data-align="center"><code>%-d</code></td><td>Día del mes</td><td class="has-text-align-center" data-align="center">15</td></tr><tr><td class="has-text-align-center" data-align="center"><code>%b</code></td><td>Nombre del mes abreviado</td><td class="has-text-align-center" data-align="center">jul</td></tr><tr><td class="has-text-align-center" data-align="center"><code>%B</code></td><td>Nombre del mes</td><td class="has-text-align-center" data-align="center">julio</td></tr><tr><td class="has-text-align-center" data-align="center"><code>%m</code></td><td>Día del mes <br>con ceros a la izquierda</td><td class="has-text-align-center" data-align="center">07</td></tr><tr><td class="has-text-align-center" data-align="center"><code>%-m</code></td><td>Día del mes</td><td class="has-text-align-center" data-align="center">7</td></tr><tr><td class="has-text-align-center" data-align="center"><code>%y</code></td><td>Año sin el siglo<br>con ceros a la izquierda</td><td class="has-text-align-center" data-align="center">19</td></tr><tr><td class="has-text-align-center" data-align="center"><code>%Y</code></td><td>Año con el siglo</td><td class="has-text-align-center" data-align="center">2019</td></tr><tr><td class="has-text-align-center" data-align="center"><code>%j</code></td><td>Día del año<br>con ceros a la izquierda</td><td class="has-text-align-center" data-align="center">196</td></tr><tr><td class="has-text-align-center" data-align="center"><code>%-j</code></td><td>Día del año</td><td class="has-text-align-center" data-align="center">196</td></tr><tr><td class="has-text-align-center" data-align="center"><code>%U</code></td><td>Semana del año<br>(domingo primer día)<br>con ceros a la izquierda</td><td class="has-text-align-center" data-align="center">28</td></tr><tr><td class="has-text-align-center" data-align="center"><code>%W</code></td><td>Semana del año<br>(lunes primer día)<br>con ceros a la izquierda</td><td class="has-text-align-center" data-align="center">28</td></tr></tbody></table><figcaption>Códigos de formato de fechas</figcaption></figure><div class="ub-styled-box ub-notification-box" id="ub-styled-box-d60e0320-22cc-4c73-beb2-d0e160104760"><p>Ten en cuenta que el nombre de los días y de los meses está adaptado al idioma que esté definido. Para definir el mismo que el configurado en el sistema puedes ejecutar lo siguiente en tu <em>script</em>:</p><p><code>import locale<br>locale.setlocale(locale.LC_ALL, '')</code></p></div><p>Como en los objetos de clase <code>datetime</code> tenemos la información correspondiente tanto a la fecha como a la hora, podemos hacer uso de los códigos de formato de una o de otra o de ambos si así lo necesitamos.</p><p>Te muestro algunos ejemplos para terminar de clarificar el uso de <code>strftime</code>:</p><pre class="wp-block-code line-numbers language-python" tabindex="0"><code lang="python" class="language-python"><span class="token keyword">import</span> datetime
+<span class="token keyword">import</span> locale
+
+locale<span class="token punctuation">.</span>setlocale<span class="token punctuation">(</span>locale<span class="token punctuation">.</span>LC_ALL<span class="token punctuation">,</span> <span class="token string">''</span><span class="token punctuation">)</span>
+
+fecha_actual <span class="token operator">=</span> datetime<span class="token punctuation">.</span>datetime<span class="token punctuation">.</span>now<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>fecha_actual<span class="token punctuation">)</span>
+
+<span class="token comment"># fechas</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>fecha_actual<span class="token punctuation">.</span>strftime<span class="token punctuation">(</span><span class="token string">'%d - %m - %y'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>fecha_actual<span class="token punctuation">.</span>strftime<span class="token punctuation">(</span><span class="token string">'%d / %m / %Y'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>fecha_actual<span class="token punctuation">.</span>strftime<span class="token punctuation">(</span><span class="token string">'%Y%m%d'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>fecha_actual<span class="token punctuation">.</span>strftime<span class="token punctuation">(</span><span class="token string">'%A, %-d de %B de %Y'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+<span class="token comment"># fechas y horas</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>fecha_actual<span class="token punctuation">.</span>strftime<span class="token punctuation">(</span><span class="token string">'%H:%M de %d / %m / %Y'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>fecha_actual<span class="token punctuation">.</span>strftime<span class="token punctuation">(</span><span class="token string">'%Y%m%d%H%M%S'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>Resultado por pantalla:</p><pre class="wp-block-preformatted">2022-10-21 19:28:47.189500
+21 - 10 - 22
+21 / 10 / 2022
+20221021
+viernes, 21 de octubre de 2022
+19:28 de 21 / 10 / 2022
+20221021192847</pre><h2 id="4-obtener-fecha-y-hora-actuales-por-timezone-">Obtener fecha y hora actuales por <em>timezone</em></h2><p>Vale, hasta aquí sabemos obtener la hora actual del sistema, pero en el mundo global en el que vivimos <strong>la hora actual depende de la zona horaria de la que te encuentres</strong> y la comunicación ha cambiado tanto que hay que tener esto en cuenta en todo momento. Por ejemplo, no es igual la hora de España, que la de México o la de Colombia. Es más, la misma puede cambiar en distintas zonas dentro del mismo país.</p><p>Hasta el momento, los objetos <code>datetime</code>, <code>date</code> y <code>time</code> que hemos visto (con excepción del objeto devuelto por <code>today()</code>) son lo que se llaman objetos <em>naive</em> o ingenuos respecto de la zona horaria, es decir, que no saben nada de ella. Pero podemos obtener instancias de esas mismas clases que sean de tipo <em>aware</em>, es decir, que sean conscientes de su zona horaria y sirvan para compararse con otras horas y fechas también conscientes de su zona horaria.</p><p>Así pues, si lo que necesitamos es obtener la hora actual de una zona horaria concreto, tendremos que proporcionar a la función <code>now()</code> <strong>un parámetro extra en el que le indiquemos la zona horaria o <em>timezone</em></strong> que deseemos.</p><div class="code-block code-block-1" style="margin: 8px auto; text-align: center; display: block; clear: both;"><div class="opt-in-invitacion"><p class="opt-in-invitacion-titulo"><strong>15 conceptos fundamentales</strong> que necesitas conocer para <strong>aprender y dominar Python</strong></p><p class="opt-in-invitacion-texto">Te voy a hacer <strong>dos regalos</strong> (no uno, sino dos) que hablan de estos 15 conceptos fundamentales de Python: mi <strong><a href="https://www.codigopiton.com/el-tutorial-basico-interactivo-de-python/?at=oiit" target="_blank">Tutorial Básico Interactivo de Python</a></strong> y una <i>cheat sheet</i> de Python en español: <strong><a href="https://www.codigopiton.com/la-hoja-de-referencia-de-python/?at=oiih" target="_blank">La Hoja de Referencia de Python</a></strong>.</p><p class="opt-in-invitacion-texto">Estos regalos son <strong>exclusivos para los suscriptores</strong> de Código Pitón.</p><p class="opt-in-invitacion-enlace"><a id="opt-in-boton" href="https://www.codigopiton.com/la-hoja-de-referencia-de-python/?at=oiib" target="_blank">👍 Quiero mis dos regalos</a></p></div></div><p>Para esto usaremos una nueva librería llamada <code><a href="https://docs.python.org/es/3/library/zoneinfo.html" target="_blank" rel="noreferrer noopener">zoneinfo</a></code> que maneja la información relativa a las zonas horarias.</p><div class="ub-styled-box ub-notification-box" id="ub-styled-box-d5a2950a-a7b2-473f-b95e-0201280bfa2d"><p><strong>¡Ojo!</strong> La librería <code>zoneinfo</code> es parte de la librería estándar de Python desde la versión 3.9. Si utilizas una versión previa (y no tienes posibilidad de actualizarte) puedes echar un vistazo a la librería <code><a href="https://pypi.org/project/pytz/" target="_blank" rel="noreferrer noopener">pytz</a></code>.</p></div><p>Debemos crear un objeto <code>ZoneInfo</code> indicando la zona deseada. Después llamaremos a <code>now</code> pasándole dicho objeto por parámetro, y obtendremos fecha y hora del momento actual en la zona horaria indicada.</p><p>La manera de crear el objeto <code>ZoneInfo</code> es invocando al constructor proporcionándole la cadena de texto que representa la zona horaria según la <a href="https://www.iana.org/time-zones" target="_blank" rel="noreferrer noopener">base de datos de zonas horarias del IANA</a>, como se indica en el <a href="https://pypi.org/project/pytz/" target="_blank" rel="noreferrer noopener">PEP 615</a>.</p><p>Por ejemplo, yo que vivo en Galicia, en la península ibérica, el nombre de mi zona horaria es «Europe/Madrid». Para alguien en Chihuahua sería «America/Chihuahua». Para alguien en Bogotá sería «America/Bogota». Puedes consultar de manera más cómoda la base de datos de zonas horarias en <a href="https://nodatime.org/TimeZones" target="_blank" rel="noreferrer noopener">esta web de <em>Noda Time</em></a>.</p><p>Así pues, veamos un ejemplo obteniendo la hora de estas tres zonas horarias para observar las diferencias:</p><pre class="wp-block-code line-numbers language-python" tabindex="0"><code lang="python" class="language-python"><span class="token keyword">import</span> datetime
+<span class="token keyword">import</span> zoneinfo
+
+<span class="token comment"># creamos las zonas horarias</span>
+zona_madrid <span class="token operator">=</span> zoneinfo<span class="token punctuation">.</span>ZoneInfo<span class="token punctuation">(</span><span class="token string">"Europe/Madrid"</span><span class="token punctuation">)</span>
+zona_chihuahua <span class="token operator">=</span> zoneinfo<span class="token punctuation">.</span>ZoneInfo<span class="token punctuation">(</span><span class="token string">"America/Chihuahua"</span><span class="token punctuation">)</span>
+zona_bogota <span class="token operator">=</span> zoneinfo<span class="token punctuation">.</span>ZoneInfo<span class="token punctuation">(</span><span class="token string">"America/Bogota"</span><span class="token punctuation">)</span>
+
+<span class="token comment"># obtenemos las horas en cada zona horaria</span>
+hora_madrid <span class="token operator">=</span> datetime<span class="token punctuation">.</span>datetime<span class="token punctuation">.</span>now<span class="token punctuation">(</span>zona_madrid<span class="token punctuation">)</span>
+hora_chihuahua <span class="token operator">=</span> datetime<span class="token punctuation">.</span>datetime<span class="token punctuation">.</span>now<span class="token punctuation">(</span>zona_chihuahua<span class="token punctuation">)</span>
+hora_bogota <span class="token operator">=</span> datetime<span class="token punctuation">.</span>datetime<span class="token punctuation">.</span>now<span class="token punctuation">(</span>zona_bogota<span class="token punctuation">)</span>
+
+<span class="token comment"># mostramos las horas obtenidas</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string-interpolation"><span class="token string">f'Madrid:    </span><span class="token interpolation"><span class="token punctuation">{</span>hora_madrid<span class="token punctuation">}</span></span><span class="token string">'</span></span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string-interpolation"><span class="token string">f'Chihuahua: </span><span class="token interpolation"><span class="token punctuation">{</span>hora_chihuahua<span class="token punctuation">}</span></span><span class="token string">'</span></span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string-interpolation"><span class="token string">f'Bogota:    </span><span class="token interpolation"><span class="token punctuation">{</span>hora_bogota<span class="token punctuation">}</span></span><span class="token string">'</span></span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>Resultado:</p><pre class="wp-block-preformatted">Madrid:    2022-10-24 11:15:04.571768+02:00
+Chihuahua: 2022-10-24 03:15:04.571774-06:00
+Bogota:    2022-10-24 04:15:04.571775-05:00</pre><h2 id="5-obtener-fecha-y-hora-actuales-de-un-servidor-ntp-en-python">Obtener fecha y hora actuales de un servidor NTP en Python</h2><p>El protocolo NTP (Network Time Protocol) <strong>nos permite sincronizar la hora de manera muy precisa entre diversos dispositivos de una red</strong>. Es por eso que podemos utilizarlo para obtener el momento actual de manera precisa y no tener que fiarnos de la del sistema (aunque los sistemas operativos modernos suelen sincronizarse con un servidor NTP).</p><p>Puedes obtener más información sobre el protocolo NTP y cómo utilizarlo en el proyecto <em><a href="https://www.ntppool.org/es/" target="_blank" rel="noreferrer noopener">NTP Pool Project</a></em>, que es un conjunto de servidores que se pueden usar de manera segura, rápida y fiable.</p><div class="code-block code-block-9" style="margin: 8px 0; clear: both;"><div id="100591-3" style="height: 600px;width: 300px;margin: auto;"><script src="https://ads.themoneytizer.com/s/gen.js?type=3"></script><script src="https://ads.themoneytizer.com/s/requestform.js?siteId=100591&amp;formatId=3"></script></div></div><p>En Python podemos utilizar la librería <code>ntplib</code> para hacer la consulta a un servidor.</p><div class="ub-styled-box ub-notification-box" id="ub-styled-box-24eb7e35-61f6-4f69-8433-6c00fdd3a84e"><p>Recuerda instalar la librería. Puedes utilizar para ello el comando <code>pip install ntplib</code>.</p></div><p>Esta librería implementa un cliente de NTP que nos hace sencillo comunicarnos un servidor de tiempo. Crearemos una instancia de la clase <code>NTPClient</code> y después realizaremos una petición con el método <code>request</code> a un servidor o a un <em>pool</em> de servidores. En este caso usaremos el <em>pool</em> general <code>pool.ntp.org</code>, que intentará asignarnos el mejor servidor para nuestra ubicación, pero puedes seleccionar el que necesites de <a href="https://www.ntppool.org/zone/@" target="_blank" rel="noreferrer noopener">esta lista</a>.</p><p>Encapsulamos este código en un bloque <code>try except</code> ya que la conexión podría fallar. Si todo va bien, <code>request</code> nos devolverá un objeto <code>respuesta</code> con distinta información. El atributo que nos interesa de dicho objeto es <code>tx_time</code>, que contiene la hora actual en formato de sistema.</p><p>Solo nos queda traducir esa hora a un objeto <code>datetime</code>. Podemos hacer uso de la función <code>fromtimestamp</code> de la clase <code>datetime</code> que la convertirá a un objeto <code>datetime</code> en la zona horaria de nuestro sistema.</p><p>Si lo deseamos, podemos proporcionar a dicha función un zona horaria diferente de la nuestra (leer sección anterior) a través del parámetro <code>tz</code>.</p><p>Veamos el código para obtener la hora actual a través de NTP:</p><pre class="wp-block-code line-numbers language-python" tabindex="0"><code lang="python" class="language-python"><span class="token keyword">import</span> datetime
+<span class="token keyword">import</span> ntplib
+
+<span class="token keyword">try</span><span class="token punctuation">:</span>
+    servidor_ntp <span class="token operator">=</span> <span class="token string">'pool.ntp.org'</span>
+    c <span class="token operator">=</span> ntplib<span class="token punctuation">.</span>NTPClient<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    respuesta <span class="token operator">=</span> c<span class="token punctuation">.</span>request<span class="token punctuation">(</span>servidor_ntp<span class="token punctuation">)</span>
+
+    fecha_actual <span class="token operator">=</span> datetime<span class="token punctuation">.</span>datetime<span class="token punctuation">.</span>fromtimestamp<span class="token punctuation">(</span>respuesta<span class="token punctuation">.</span>tx_time<span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>fecha_actual<span class="token punctuation">)</span>
+    
+<span class="token keyword">except</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string-interpolation"><span class="token string">f'Error de conexión a </span><span class="token interpolation"><span class="token punctuation">{</span>servidor_ntp<span class="token punctuation">}</span></span><span class="token string">'</span></span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>Y el resultado será:</p><pre class="wp-block-preformatted">2022-10-24 10:23:09.736467</pre><p>Ahora, con todo lo aprendido en secciones anteriores podrás acceder a los componentes de fecha y de hora o formatear el resultado a tu gusto.</p><h2 id="6-conclusiones">Conclusiones</h2><p>Hemos visto <strong>cómo obtener la hora actual del sistema, de un servidor de NTP y en cualquier zona horaria</strong>.</p><p>Hemos aprendido a <strong>formatear la hora</strong> a nuestro gusto.</p><div class="code-block code-block-2" style="margin: 8px auto; text-align: center; display: block; clear: both;"><form class="simple_form form form-vertical formulario-en-post" id="new_subscriber" action="https://boletin.codigopiton.com/f/E9nQKXNYmgM" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><div class="custom-text-wrapper">Recibe <strong>contenido exclusivo</strong> y obtén <strong>gratis</strong> la <a href="https://www.codigopiton.com/la-hoja-de-referencia-de-python/?at=10">Hoja de Referencia de Python</a>.<br></div><div class="custom-text-wrapper">✅ Contenido de alto valor &nbsp;&nbsp;&nbsp;&nbsp; ✅ Sin spam &nbsp;&nbsp;&nbsp;&nbsp; ✅ Cancela cuando quieras</div><div class="form-group string optional subscriber_name"><input class="form-control string required" placeholder="Nombre (sin apellidos)" required="required" type="text" name="subscriber[name]" id="subscriber_name"></div><div class="form-group email required subscriber_email"><input class="form-control string email required" required="required" aria-required="true" placeholder="E-Mail" type="email" name="subscriber[email]" id="subscriber_email"></div><div class="form-group string optional subscriber_custom_fields_2 oculto"><input class="form-control string optional" type="hidden" name="subscriber[custom_fields][2]" id="subscriber_custom_fields_2" value="Formulario in post 02"></div><div class="form-group string optional subscriber_custom_fields_3 oculto"><input class="form-control string optional" type="hidden" name="subscriber[custom_fields][3]" id="subscriber_custom_fields_3" value="/como-obtener-la-hora-actual-en-python/"></div><div class="form-group boolean optional subscriber_custom_fields_1"><div class="checkbox"><input value="0" type="hidden" name="subscriber[custom_fields][1]"><label class="boolean optional" for="subscriber_custom_fields_1"><input class="boolean optional" type="checkbox" value="1" name="subscriber[custom_fields][1]" id="subscriber_custom_fields_1"> Quiero info sobre cursos y otros servicios</label></div></div><div class="form-group boolean required subscriber_subscribed_with_acceptance"><div class="checkbox"><input value="0" type="hidden" name="subscriber[subscribed_with_acceptance]"><label class="boolean required" for="subscriber_subscribed_with_acceptance"><input class="boolean required" required="required" aria-required="true" type="checkbox" value="1" name="subscriber[subscribed_with_acceptance]" id="subscriber_subscribed_with_acceptance"><abbr title="Requerido"> </abbr>He leído y acepto la <a href="https://www.codigopiton.com/politica-de-privacidad/" target="_blank">política de privacidad</a></label></div></div>
+<input type="text" name="anotheremail" id="anotheremail" style="position: absolute; left: -5000px" tabindex="-1" autocomplete="off"><div class="submit-wrapper">
+<input type="submit" name="commit" value="Descargar ahora gratis 👍" class="btn btn-primary" data-disable-with="Procesando"></div><div>
+<br>Antes de suscribirte consulta aquí la&nbsp;<div class="tooltip" data-nosnippet="">Información Básica sobre Protección de Datos. <span class="tooltiptext">
+Responsable de datos: Juan Monroy Camafreita.
+Finalidad de recogida y tratamiento de datos personales: enviarte boletín informativo de Python y comunicaciones comerciales. Legitimación: tu consentimiento. Destinatarios: no se ceden a terceros. Los datos se almacenan en los servidores de marketing (MailRelay). Derechos: podrás ejercer tus derechos de acceso, rectificación, limitación y supresión de datos en info @ codigopiton.com así como presentar una reclamación ante una autoridad de control. Más información: <a href="https://www.codigopiton.com/politica-de-privacidad/" target="_blank">política de privacidad</a>, encontrarás información adicional sobre la recopilación y el uso de tu información personal.</span></div></div></form></div><p>Como en muchas aplicaciones no se puede independizar de la fecha, también te he contado <strong>cómo obtener y formatear la fecha</strong>, por si fuera necesario.</p><p>Ten en cuenta que, en general, el manejo de fechas y horas es un <strong>tema bastante complicado</strong> porque muchas veces las horas responden a temas de políticas de los países y no hay un criterio común. Además, hay que tener en cuenta que en muchas lugares se aplican ajustes horarios para la optimización del uso de la luz solar. Todo eso puede hacer que tengas que adaptar tu programa en función del país en el que tenga que funcionar.</p><p>Y nada más, si te ha resultado de ayuda este artículo <strong>considera <a href="https://www.codigopiton.com/como-obtener-la-hora-actual-en-python/#themify-popup-2805">suscribirte a Código Pitón</a></strong> y recibirás trucos y consejos de Python de vez en cuando así como <a href="https://www.codigopiton.com/la-hoja-de-referencia-de-python/" data-type="page" data-id="2037">algún regalito</a> en cuanto te suscribas.</p><p><strong>¡Feliz programación!</strong></p><div class="code-block code-block-4" style="margin: 8px 0; clear: both;"><div class="gb-container gb-container-d6efde58"><div class="gb-inside-container"><h3 class="gb-headline gb-headline-e144e750"><span class="gb-headline-text">&nbsp;🎁 Tutorial Básico Interactivo y La Hoja de Referencia de Python – ¡Gratis!</span></h3><div class="gb-grid-wrapper gb-grid-wrapper-27cfea5f"><div class="gb-grid-column gb-grid-column-ade95ad2"><div class="gb-container gb-container-ade95ad2"><div class="gb-inside-container"><figure class="wp-block-image size-large is-resized"><img loading="lazy" src="./Cómo Obtener la Hora Actual en Python - Código Pitón_files/captura_hoja_de_referencia.png" data-src="https://www.codigopiton.com/wp-content/uploads/2021/02/captura_hoja_de_referencia.png" alt="La Hoja de Referencia de Python - Código Pitón" class="wp-image-2088 lazyloaded" data-srcset="https://www.codigopiton.com/wp-content/uploads/2021/02/captura_hoja_de_referencia.png 400w, https://www.codigopiton.com/wp-content/uploads/2021/02/captura_hoja_de_referencia-212x300.png 212w" sizes="(max-width: 307px) 100vw, 307px" srcset="https://www.codigopiton.com/wp-content/uploads/2021/02/captura_hoja_de_referencia.png 400w, https://www.codigopiton.com/wp-content/uploads/2021/02/captura_hoja_de_referencia-212x300.png 212w" width="307" height="433"></figure></div></div></div><div class="gb-grid-column gb-grid-column-25578d26"><div class="gb-container gb-container-25578d26"><div class="gb-inside-container"><form class="simple_form form form-vertical" id="new_subscriber" action="https://boletin.codigopiton.com/f/E9nQKXNYmgM" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><div class="custom-text-wrapper">¿Quieres mejorar tu Python? Recibe totalmente gratis el <strong><a href="https://www.codigopiton.com/el-tutorial-basico-interactivo-de-python/?at=ft">Tutorial Básico Interactivo de Python</a></strong>, la <strong><a href="https://www.codigopiton.com/la-hoja-de-referencia-de-python/?at=fh">Hoja de Referencia de Python</a></strong> y contenido exclusivo como <strong>trucos y consejos</strong>.<br><br></div><div class="form-group string optional subscriber_name"><input class="form-control string required" placeholder="Nombre (sin apellidos)" required="required" type="text" name="subscriber[name]" id="subscriber_name"></div><div class="form-group email required subscriber_email"><input class="form-control string email required" required="required" aria-required="true" placeholder="E-Mail" type="email" name="subscriber[email]" id="subscriber_email"></div><div class="form-group string optional subscriber_custom_fields_2 oculto"><input class="form-control string optional" type="hidden" name="subscriber[custom_fields][2]" id="subscriber_custom_fields_2" value="Formulario final de página"></div><div class="form-group string optional subscriber_custom_fields_3 oculto"><input class="form-control string optional" type="hidden" name="subscriber[custom_fields][3]" id="subscriber_custom_fields_3" value="/como-obtener-la-hora-actual-en-python/"></div><div class="form-group boolean optional subscriber_custom_fields_1"><div class="checkbox"><input value="0" type="hidden" name="subscriber[custom_fields][1]"><label class="boolean optional" for="subscriber_custom_fields_1"><input class="boolean optional" type="checkbox" value="1" name="subscriber[custom_fields][1]" id="subscriber_custom_fields_1"> Quiero recibir información sobre cursos y otros servicios</label></div></div><div class="form-group boolean required subscriber_subscribed_with_acceptance"><div class="checkbox"><input value="0" type="hidden" name="subscriber[subscribed_with_acceptance]"><label class="boolean required" for="subscriber_subscribed_with_acceptance"><input class="boolean required" required="required" aria-required="true" type="checkbox" value="1" name="subscriber[subscribed_with_acceptance]" id="subscriber_subscribed_with_acceptance"><abbr title="Requerido"> </abbr>He leído y acepto la <a href="https://www.codigopiton.com/politica-de-privacidad/" target="_blank" rel="noopener">política de privacidad</a></label></div></div><input type="text" name="anotheremail" id="anotheremail" style="position: absolute; left: -5000px" tabindex="-1" autocomplete="off"><div class="submit-wrapper">
+<input type="submit" name="commit" value="🚀 Quiero la Hoja y el Tutorial de Python" class="btn btn-primary" data-disable-with="Procesando"><br><br></div><div class="tooltip" data-nosnippet="" style="font-size:12px">Antes de suscribirte consulta aquí la Información Básica sobre Protección de Datos. <span class="tooltiptext" style="font-size:12px">
+Responsable de los datos: Juan Monroy Camafreita.
+Finalidad de la recogida y tratamiento de los datos personales: enviarte boletín informativo de Python y comunicaciones comerciales. Legitimación: tu consentimiento. Destinatarios: no se ceden a terceros. Los datos se almacenan en los servidores de marketing (MailRelay). Derechos: podrás ejercer tus derechos de acceso, rectificación, limitación y supresión de datos en info @ codigopiton.com así como presentar una reclamación ante una autoridad de control. Más información en nuestra <a href="https://www.codigopiton.com/politica-de-privacidad/" target="_blank" rel="noopener">política de privacidad</a>, encontrarás información adicional sobre la recopilación y el uso de tu información personal, incluida información sobre acceso, conservación, rectificación, eliminación, seguridad y otros temas.</span></div></form></div></div></div></div></div><div class="gb-shapes"><div class="gb-shape gb-shape-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 194.3" preserveAspectRatio="none"><path d="M1200 133.3l-50 8.9c-50 8.6-150 26.9-250 31.1-100 4.2-200-4.2-300-26.7S400 89.2 300 62.2C200 35.8 100 17.5 50 8.9L0 0v194.3h1200v-61z"></path></svg></div></div></div></div></div></article><div class="nv-sidebar-wrap col-sm-12 nv-right blog-sidebar " style="position: relative; overflow: visible; box-sizing: border-box; min-height: 4064px;"><div class="theiaStickySidebar" style="padding-top: 0px; padding-bottom: 1px; position: fixed; transform: translateY(-215.656px); width: 276.797px; top: 0px; left: 1018.69px;"><aside id="secondary" role="complementary"><div id="block-33" class="widget widget_block"><div id="100591-2"></div></div><div id="block-46" class="widget widget_block"><div class="gb-container gb-container-6c8c050b"><div class="gb-inside-container"><p class="has-text-align-center"><a rel="noreferrer noopener nofollow" href="https://click.linksynergy.com/deeplink?id=Rjki/*cvmVg&amp;mid=47907&amp;murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fpython-total%2F" target="_blank"><strong>Python Total</strong></a><br><a rel="noreferrer noopener nofollow" href="https://click.linksynergy.com/deeplink?id=Rjki/*cvmVg&amp;mid=47907&amp;murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fpython-total%2F" target="_blank">Programador Avanzado en 16 días</a></p><figure class="gb-block-image gb-block-image-eac4c95c"><a href="https://click.linksynergy.com/deeplink?id=Rjki/*cvmVg&amp;mid=47907&amp;murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fpython-total%2F" target="_blank" rel="noopener noreferrer nofollow"><img data-lazyloaded="1" src="./Cómo Obtener la Hora Actual en Python - Código Pitón_files/udemy_python_16_dias.png" decoding="async" width="512" height="282" class="gb-image gb-image-eac4c95c entered litespeed-loaded" data-src="https://www.codigopiton.com/wp-content/uploads/2023/01/udemy_python_16_dias.png" alt="Python Total - Programador Avanzado en 16 días" title="Curso de Python 100% recomendado" data-srcset="https://www.codigopiton.com/wp-content/uploads/2023/01/udemy_python_16_dias.png 512w, https://www.codigopiton.com/wp-content/uploads/2023/01/udemy_python_16_dias-300x165.png 300w" data-sizes="(max-width: 512px) 100vw, 512px" data-ll-status="loaded" sizes="(max-width: 512px) 100vw, 512px" srcset="https://www.codigopiton.com/wp-content/uploads/2023/01/udemy_python_16_dias.png 512w, https://www.codigopiton.com/wp-content/uploads/2023/01/udemy_python_16_dias-300x165.png 300w"><noscript><img decoding="async" width="512" height="282" class="gb-image gb-image-eac4c95c" src="https://www.codigopiton.com/wp-content/uploads/2023/01/udemy_python_16_dias.png" alt="Python Total - Programador Avanzado en 16 días" title="Curso de Python 100% recomendado" srcset="https://www.codigopiton.com/wp-content/uploads/2023/01/udemy_python_16_dias.png 512w, https://www.codigopiton.com/wp-content/uploads/2023/01/udemy_python_16_dias-300x165.png 300w" sizes="(max-width: 512px) 100vw, 512px" /></noscript></a></figure><p>→ Más de <strong>23400</strong> estudiantes<br>→ 4,8 ★ (más de 7100 reseñas)<br>→ 30 horas en 243 clases<br>→ Todos los niveles<br>Por <a rel="noreferrer noopener nofollow" href="https://click.linksynergy.com/deeplink?id=Rjki/*cvmVg&amp;mid=47907&amp;murl=https%3A%2F%2Fwww.udemy.com%2Fuser%2Ffedegaray%2F" target="_blank">Federico Garay</a></p></div></div></div><div id="block-23" class="widget widget_block"><div class="widget-form-titulo"><a style="text-decoration: underline;" href="https://www.codigopiton.com/la-hoja-de-referencia-de-python/?at=sb">La Hoja de Referencia de Python</a></div><div style="width:80%;"><i>¡Más de 2500 programadores y estudiantes ya la tienen!</i><br>
+<a href="https://www.codigopiton.com/como-obtener-la-hora-actual-en-python/#themify-popup-2805" class="tf_popup btn btn-primary">Descargar ahora</a></div><p></p></div></aside></div></div></div></div></main><footer class="site-footer" id="site-footer"><div class="hfg_footer"><div class="footer--row footer-top layout-full-contained" id="cb-row--footer-top" data-row-id="top" data-show-on="desktop"><div class="footer--row-inner footer-top-inner footer-content-wrap"><div class="container"><div class="hfg-grid nv-footer-content hfg-grid-top row--wrapper row " data-section="hfg_footer_layout_top"><div class="builder-item hfg-item-last hfg-item-first col-12 desktop-left tablet-left mobile-left"><div class="item--inner builder-item--footer-one-widgets" data-section="neve_sidebar-widgets-footer-one-widgets" data-item-id="footer-one-widgets"><div class="widget-area"><div id="block-29" class="widget widget_block"><p class="has-text-align-center">Copyright 2022 - Código Pitón - https://www.codigopiton.com/<br><a href="https://www.codigopiton.com/aviso-legal/">Aviso legal</a> - <a href="https://www.codigopiton.com/politica-de-cookies/">Política de cookies</a> - <a href="https://www.codigopiton.com/politica-de-privacidad/">Política de privacidad</a></p></div></div></div></div></div></div></div></div><div class="footer--row footer-bottom layout-fullwidth" id="cb-row--footer-bottom" data-row-id="bottom" data-show-on="desktop"><div class="footer--row-inner footer-bottom-inner footer-content-wrap"><div class="container"><div class="hfg-grid nv-footer-content hfg-grid-bottom row--wrapper row " data-section="hfg_footer_layout_bottom"><div class="builder-item hfg-item-last hfg-item-first col-12 desktop-center tablet-left mobile-left"><div class="item--inner builder-item--footer-two-widgets" data-section="neve_sidebar-widgets-footer-two-widgets" data-item-id="footer-two-widgets"><div class="widget-area"><div id="block-35" class="widget widget_block widget_text"><p class="has-text-align-center"><br><a href="https://www.codigopiton.com/la-hoja-de-referencia-de-python/?at=pie">La Hoja de Referencia de Python</a> - <a href="https://www.codigopiton.com/el-tutorial-basico-interactivo-de-python/?at=pie">El Tutorial Básico Interactivo de Python</a><br><a href="https://www.codigopiton.com/como-obtener-la-hora-actual-en-python/#themify-popup-2805">Suscríbete</a> - <a rel="nofollow noreferrer noopener" href="https://twitter.com/codigopiton" target="_blank">Código Pitón en Twitter</a> - <a href="https://www.codigopiton.com/contacto/">Contacto</a><br><br><br><em>Programa un poquito cada día, </em><em>sé amable con los demás,</em><br><em>disfruta, aprende, ama...</em><br><br><br><br><br></p></div></div></div></div></div></div></div></div></div></footer></div><div id="themify-popup-2825" class="themify-popup style-classic mfp-hide" data-trigger="timedelay" data-style="classic" style="display: block;" data-position="center-center" data-close-overlay="no" data-time-delay="40" data-animation="none" data-animation-exit="none" data-limit-count="1" data-cookie-expiration="3" data-display="desktop" data-enableescapekey="yes"><div class="popup-optin2-outer"><div class="popup-optin2-image"><img data-lazyloaded="1" src="https://www.codigopiton.com/wp-content/uploads/2022/08/popup_code.jpg" width="1436" height="768" decoding="async" data-src="https://www.codigopiton.com/wp-content/uploads/2022/08/popup_code.jpg" data-ll-status="error" class="entered error"><noscript><img data-lazyloaded="1" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNDM2IiBoZWlnaHQ9Ijc2OCIgdmlld0JveD0iMCAwIDE0MzYgNzY4Ij48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZmZmZmZmIi8+PC9zdmc+" width="1436" height="768" decoding="async" data-src="https://www.codigopiton.com/wp-content/uploads/2022/08/popup_code.jpg" /><noscript><img width="1436" height="768" decoding="async" src="https://www.codigopiton.com/wp-content/uploads/2022/08/popup_code.jpg" /></noscript></div><div class="popup-optin2"><div class="encabezado-con-foto"><div><img data-lazyloaded="1" src="./Cómo Obtener la Hora Actual en Python - Código Pitón_files/foto-juan-carne.jpg" width="300" height="300" decoding="async" data-src="https://www.codigopiton.com/wp-content/uploads/2022/11/foto-juan-carne.jpg" class="encabezado-con-foto-imagen entered litespeed-loaded" data-ll-status="loaded"><noscript><img data-lazyloaded="1" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIiB2aWV3Qm94PSIwIDAgMzAwIDMwMCI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0iI2ZmZmZmZiIvPjwvc3ZnPg==" width="300" height="300" decoding="async" data-src="https://www.codigopiton.com/wp-content/uploads/2022/11/foto-juan-carne.jpg" class="encabezado-con-foto-imagen"><noscript><img width="300" height="300" decoding="async" src="https://www.codigopiton.com/wp-content/uploads/2022/11/foto-juan-carne.jpg" class="encabezado-con-foto-imagen"></noscript></div><div class="encabezado-con-foto-presentacion">Hey! Aquí Juan, creador de Código Pitón y Doctor en Informática</div></div><form id="new_subscriber" class="simple_form form form-vertical formulario-en-post" accept-charset="UTF-8" action="https://boletin.codigopiton.com/f/E9nQKXNYmgM" method="post"><input name="utf8" type="hidden" value="✓"><p></p><div class="custom-text-wrapper">Deja de olvidarte de la sintaxis de Python.<br>
+Acelera tu aprendizaje.<br>
+Supera materias y pruebas técnicas.</div><div class="custom-text-wrapper2"><em><strong>Más de 2500</strong> estudiantes y programadores ya lo han hecho.</em></div><div class="custom-text-wrapper2">¿A dónde quieres que <strong>te envíe la Hoja de Referencia de Python</strong> de Código Pitón?</div><div class="form-group string optional subscriber_name"><input id="subscriber_name" class="form-control string required" name="subscriber[name]" required="required" type="text" placeholder="Pon tu nombre aquí (sin apellidos)"></div><div class="form-group email required subscriber_email"><input id="subscriber_email" class="form-control string email required" name="subscriber[email]" required="required" type="email" placeholder="Pon tu E-Mail aquí" aria-required="true"></div><div class="form-group string optional subscriber_custom_fields_2 oculto"><input id="subscriber_custom_fields_2" class="form-control string optional" name="subscriber[custom_fields][2]" type="hidden" value="Pop Up Timer Hoja con Imagen"></div><div class="form-group string optional subscriber_custom_fields_3 oculto"><input id="subscriber_custom_fields_3" class="form-control string optional" name="subscriber[custom_fields][3]" type="hidden" value="/como-obtener-la-hora-actual-en-python/"></div><div class="form-group boolean optional subscriber_custom_fields_1"><div class="checkbox"><input name="subscriber[custom_fields][1]" type="hidden" value="0"><label class="boolean optional" for="subscriber_custom_fields_1"><input id="subscriber_custom_fields_1" class="boolean optional" name="subscriber[custom_fields][1]" type="checkbox" value="1"> Quiero info de ofertas de trabajo, cursos y otros servicios<br>
+</label></div></div><div class="form-group boolean required subscriber_subscribed_with_acceptance"><div class="checkbox"><input name="subscriber[subscribed_with_acceptance]" type="hidden" value="0"><label class="boolean required" for="subscriber_subscribed_with_acceptance"><input id="subscriber_subscribed_with_acceptance" class="boolean required" name="subscriber[subscribed_with_acceptance]" required="required" type="checkbox" value="1" aria-required="true"><abbr title="Requerido"> </abbr>He leído y acepto la <a href="https://www.codigopiton.com/politica-de-privacidad/" target="_blank" rel="noopener">política de privacidad</a></label></div></div><p><input id="anotheremail" style="position: absolute; left: -5000px;" tabindex="-1" autocomplete="off" name="anotheremail" type="text"></p><div class="submit-wrapper"><input class="btn btn-primary" name="commit" type="submit" value="👍   Envíame la Hoja de Referencia" data-disable-with="Procesando"></div><div><div class="div-boton-cerrar-popup"><a class="themify-popup-close" href="https://www.codigopiton.com/como-obtener-la-hora-actual-en-python/#" data-init="1">No gracias, no quiero la Hoja</a></div><div class="tooltip" data-nosnippet="">Información Básica sobre Protección de Datos. <span class="tooltiptext">Responsable de datos: Juan Monroy Camafreita.<br>
+Finalidad de recogida y tratamiento de datos personales: enviarte boletín informativo de Python y comunicaciones comerciales. Legitimación: tu consentimiento. Destinatarios: no se ceden a terceros. Los datos se almacenan en los servidores de marketing (MailRelay). Derechos: podrás ejercer tus derechos de acceso, rectificación, limitación y supresión de datos en info @ codigopiton.com así como presentar una reclamación ante una autoridad de control. Más información: <a href="https://www.codigopiton.com/politica-de-privacidad/" target="_blank" rel="noopener">política de privacidad</a>, encontrarás información adicional sobre la recopilación y el uso de tu información personal.</span></div></div></form></div></div></div><style>body.themify-popup-showing-2825 .mfp-wrap .mfp-inline-holder .mfp-content{width:700px!important}</style><div id="themify-popup-2805" class="themify-popup style-classic mfp-hide" data-trigger="manual" data-style="classic" style="display:none" data-position="center-center" data-close-overlay="no" data-animation="none" data-animation-exit="none" data-enableescapekey="yes"><div class="popup-optin2-outer"><div class="popup-optin2-image"><img data-lazyloaded="1" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNDM2IiBoZWlnaHQ9Ijc2OCIgdmlld0JveD0iMCAwIDE0MzYgNzY4Ij48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZmZmZmZmIi8+PC9zdmc+" width="1436" height="768" decoding="async" data-src="https://www.codigopiton.com/wp-content/uploads/2022/08/popup_code.jpg"><noscript><img data-lazyloaded="1" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNDM2IiBoZWlnaHQ9Ijc2OCIgdmlld0JveD0iMCAwIDE0MzYgNzY4Ij48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZmZmZmZmIi8+PC9zdmc+" width="1436" height="768" decoding="async" data-src="https://www.codigopiton.com/wp-content/uploads/2022/08/popup_code.jpg" /><noscript><img width="1436" height="768" decoding="async" src="https://www.codigopiton.com/wp-content/uploads/2022/08/popup_code.jpg" /></noscript></div><div class="popup-optin2"><div class="encabezado-con-foto"><div><img data-lazyloaded="1" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIiB2aWV3Qm94PSIwIDAgMzAwIDMwMCI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0iI2ZmZmZmZiIvPjwvc3ZnPg==" width="300" height="300" decoding="async" data-src="https://www.codigopiton.com/wp-content/uploads/2022/11/foto-juan-carne.jpg" class="encabezado-con-foto-imagen"><noscript><img data-lazyloaded="1" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIiB2aWV3Qm94PSIwIDAgMzAwIDMwMCI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0iI2ZmZmZmZiIvPjwvc3ZnPg==" width="300" height="300" decoding="async" data-src="https://www.codigopiton.com/wp-content/uploads/2022/11/foto-juan-carne.jpg" class="encabezado-con-foto-imagen"><noscript><img width="300" height="300" decoding="async" src="https://www.codigopiton.com/wp-content/uploads/2022/11/foto-juan-carne.jpg" class="encabezado-con-foto-imagen"></noscript></div><div class="encabezado-con-foto-presentacion">Hey! Aquí Juan, creador de Código Pitón y Doctor en Informática</div></div><form id="new_subscriber" class="simple_form form form-vertical formulario-en-post" accept-charset="UTF-8" action="https://boletin.codigopiton.com/f/E9nQKXNYmgM" method="post"><input name="utf8" type="hidden" value="✓"><p></p><div class="custom-text-wrapper">Deja de olvidarte de la sintaxis de Python.<br>
+Acelera tu aprendizaje.<br>
+Supera materias y pruebas técnicas.</div><div class="custom-text-wrapper2"><em><strong>Más de 2500</strong> estudiantes y programadores ya lo han hecho.</em></div><div class="custom-text-wrapper2">¿A dónde <strong>te envío la Hoja de Referencia de Python</strong>?</div><div class="form-group string optional subscriber_name"><input id="subscriber_name" class="form-control string required" name="subscriber[name]" required="required" type="text" placeholder="Pon tu nombre aquí (sin apellidos)"></div><div class="form-group email required subscriber_email"><input id="subscriber_email" class="form-control string email required" name="subscriber[email]" required="required" type="email" placeholder="Pon tu E-Mail aquí" aria-required="true"></div><div class="form-group string optional subscriber_custom_fields_2 oculto"><input class="form-control string optional" type="hidden" name="subscriber[custom_fields][2]" id="subscriber_custom_fields_2" value="Pop Up Hoja con Imagen"></div><div class="form-group string optional subscriber_custom_fields_3 oculto"><input class="form-control string optional" type="hidden" name="subscriber[custom_fields][3]" id="subscriber_custom_fields_3" value="/como-obtener-la-hora-actual-en-python/"></div><div class="form-group boolean optional subscriber_custom_fields_1"><div class="checkbox"><input name="subscriber[custom_fields][1]" type="hidden" value="0"><label class="boolean optional" for="subscriber_custom_fields_1"><input id="subscriber_custom_fields_1" class="boolean optional" name="subscriber[custom_fields][1]" type="checkbox" value="1"> Quiero info de ofertas de trabajo, cursos y otros servicios</label></div></div><div class="form-group boolean required subscriber_subscribed_with_acceptance"><div class="checkbox"><input name="subscriber[subscribed_with_acceptance]" type="hidden" value="0"><label class="boolean required" for="subscriber_subscribed_with_acceptance"><input id="subscriber_subscribed_with_acceptance" class="boolean required" name="subscriber[subscribed_with_acceptance]" required="required" type="checkbox" value="1" aria-required="true"><abbr title="Requerido"> </abbr>He leído y acepto la <a href="https://www.codigopiton.com/politica-de-privacidad/" target="_blank" rel="noopener">política de privacidad</a></label></div></div><p><input id="anotheremail" style="position: absolute; left: -5000px;" tabindex="-1" autocomplete="off" name="anotheremail" type="text"></p><div class="submit-wrapper"><input class="btn btn-primary" name="commit" type="submit" value="👍   Envíame la Hoja de Referencia" data-disable-with="Procesando"></div><div><div class="div-boton-cerrar-popup"><a class="themify-popup-close" href="https://www.codigopiton.com/como-obtener-la-hora-actual-en-python/#">No gracias, no quiero la Hoja</a></div><div class="tooltip" data-nosnippet="">Información Básica sobre Protección de Datos. <span class="tooltiptext">Responsable de datos: Juan Monroy Camafreita.<br>
+Finalidad de recogida y tratamiento de datos personales: enviarte boletín informativo de Python y comunicaciones comerciales. Legitimación: tu consentimiento. Destinatarios: no se ceden a terceros. Los datos se almacenan en los servidores de marketing (MailRelay). Derechos: podrás ejercer tus derechos de acceso, rectificación, limitación y supresión de datos en info @ codigopiton.com así como presentar una reclamación ante una autoridad de control. Más información: <a href="https://www.codigopiton.com/politica-de-privacidad/" target="_blank" rel="noopener">política de privacidad</a>, encontrarás información adicional sobre la recopilación y el uso de tu información personal.</span></div></div></form></div></div></div><style>body.themify-popup-showing-2805 .mfp-wrap .mfp-inline-holder .mfp-content{width:700px!important}</style><div id="themify-popup-2776" class="themify-popup style-classic mfp-hide" data-trigger="exit" data-style="classic" style="display: block;" data-position="center-center" data-close-overlay="yes" data-animation="none" data-animation-exit="none" data-limit-count="1" data-cookie-expiration="2" data-display="desktop" data-enableescapekey="yes"><div class="popup-optin-outer"><div class="popup-optin"><div class="custom-text-wrapper"><p>&nbsp;<br>
+¿Ya te vas? Espera, mira esto…</p></div><div class="custom-text-wrapper2">¿Todavía no usas un servicio de VPN?</div><div class="custom-text-wrapper2">✅ Protege tu identidad</div><div class="custom-text-wrapper2">✅ Accede a contenido restringido por ubicación</div><div class="custom-text-wrapper2">✅ Evita que te rastreen</div><div class="custom-text-wrapper2">✅ Protege tu dispositivo móvil</div><div class="custom-text-wrapper2">✅ Usa Wi-Fi’s públicas de manera más segura</div><div class="exit-intent-monge-malo-container"><a class="exit-intent-monge-malo-button" href="https://www.dpbolvw.net/click-100759943-14063114" rel="nofollow noopener noreferrer" target="_blank"><span class="exit-intent-monge-malo-text">Quiero navegar con seguridad</span></a></div><div class="div-boton-cerrar-popup"><a class="themify-popup-close" href="https://www.codigopiton.com/como-obtener-la-hora-actual-en-python/#" data-init="1">No, gracias, no necesito protección</a></div></div></div></div><style>body.themify-popup-showing-2776 .mfp-wrap .mfp-inline-holder .mfp-content{width:700px!important}
+body.themify-popup-showing-2776 .mfp-bg{background-color: rgba(0, 0, 0, 0.7)}
+#themify-popup-2776 .welcome-popup {
+	background: #fff;
+	color: #777;
+	font-size: 1em;
+	line-height: 1.6em;
+	text-align: center;
+	padding: 75px 10% 60px;
+}
+#themify-popup-2776 .welcome-popup h1,
+#themify-popup-2776 .welcome-popup h2,
+#themify-popup-2776 .welcome-popup h3 {
+	color: #000;
+}
+#themify-popup-2776 .welcome-popup a {
+	color: #755ebb;
+	text-decoration: none;
+}
+#themify-popup-2776 .action-buttons {
+	margin: 30px 0 10px;
+}
+#themify-popup-2776 .action-buttons a {
+	font-size: 1.2em;
+	line-height: 1;
+	background: #755ebb;
+	color: #fff;
+	display: inline-block; 
+	vertical-align: middle;
+	padding: 11px 26px;
+	margin: 5px 3px;
+	text-decoration: none;
+	border-radius: 40px;
+}
+#themify-popup-2776 .action-buttons a.outline {
+	background: none;
+	color: #755ebb;
+	border: solid 2px;
+}</style><script type="text/javascript">var header_element = document.getElementsByClassName('header-main');
+if(header_element.length < 1){
+    document.getElementById('content').style.paddingTop = '0px';
+}</script> <script>field_url_form = document.getElementsByName("subscriber[custom_fields][3]");
+	for (i = 0; i < field_url_form.length; i++) {
+		 field_url_form[i].value = window.location.href.substring(27);
+	};</script> <script src="https://ads.themoneytizer.com/s/gen.js?type=2"></script> <script src="https://ads.themoneytizer.com/s/requestform.js?siteId=100591&amp;formatId=2"></script> <script src="https://ads.themoneytizer.com/s/gen.js?type=28"></script> <script src="https://ads.themoneytizer.com/s/requestform.js?siteId=100591&amp;formatId=28"></script> <link rel="stylesheet" id="themify-builder-animate-css" href="./Cómo Obtener la Hora Actual en Python - Código Pitón_files/animate.min.css" type="text/css" media="all"><iframe name="__tcfapiLocator" style="display: none;" src="./Cómo Obtener la Hora Actual en Python - Código Pitón_files/saved_resource.html"></iframe><link rel="stylesheet" id="magnific-css" href="./Cómo Obtener la Hora Actual en Python - Código Pitón_files/lightbox.min.css" type="text/css" media="all"><link rel="stylesheet" id="themify-popup-css" href="./Cómo Obtener la Hora Actual en Python - Código Pitón_files/styles.min.css" type="text/css" media="all"> <script type="text/javascript" id="mkaz-code-syntax-prism-js-js-extra">/*  */
+var prism_settings = {"pluginUrl":"https:\/\/www.codigopiton.com\/wp-content\/plugins\/code-syntax-block\/"};
+/*  */</script> <script type="text/javascript" src="./Cómo Obtener la Hora Actual en Python - Código Pitón_files/prism.js.descarga" id="mkaz-code-syntax-prism-js-js"></script> <script type="text/javascript" src="./Cómo Obtener la Hora Actual en Python - Código Pitón_files/front.build.js.descarga" id="ultimate_blocks-table-of-contents-front-script-js"></script> <script type="text/javascript" src="./Cómo Obtener la Hora Actual en Python - Código Pitón_files/scrollby-polyfill.js.descarga" id="ultimate_blocks-scrollby-polyfill-js"></script> <script type="text/javascript" id="neve-script-js-extra">/*  */
+var NeveProperties = {"ajaxurl":"https:\/\/www.codigopiton.com\/wp-admin\/admin-ajax.php","nonce":"8c11f91318","isRTL":"","isCustomize":""};
+/*  */</script> <script type="text/javascript" src="./Cómo Obtener la Hora Actual en Python - Código Pitón_files/frontend.js.descarga" id="neve-script-js" async=""></script> <script type="text/javascript" id="neve-script-js-after">var html = document.documentElement;
+	var theme = html.getAttribute('data-neve-theme') || 'light';
+	var variants = {"logo":{"light":{"src":"https:\/\/www.codigopiton.com\/wp-content\/uploads\/2021\/12\/codigo_piton_logo.png","srcset":"https:\/\/www.codigopiton.com\/wp-content\/uploads\/2021\/12\/codigo_piton_logo.png 723w, https:\/\/www.codigopiton.com\/wp-content\/uploads\/2021\/12\/codigo_piton_logo-300x50.png 300w","sizes":"(max-width: 723px) 100vw, 723px"},"dark":{"src":"https:\/\/www.codigopiton.com\/wp-content\/uploads\/2021\/12\/codigo_piton_logo.png","srcset":"https:\/\/www.codigopiton.com\/wp-content\/uploads\/2021\/12\/codigo_piton_logo.png 723w, https:\/\/www.codigopiton.com\/wp-content\/uploads\/2021\/12\/codigo_piton_logo-300x50.png 300w","sizes":"(max-width: 723px) 100vw, 723px"},"same":true}};
+
+	function setCurrentTheme( theme ) {
+		var pictures = document.getElementsByClassName( 'neve-site-logo' );
+		for(var i = 0; i<pictures.length; i++) {
+			var picture = pictures.item(i);
+			if( ! picture ) {
+				continue;
+			};
+			var fileExt = picture.src.slice((Math.max(0, picture.src.lastIndexOf(".")) || Infinity) + 1);
+			if ( fileExt === 'svg' ) {
+				picture.removeAttribute('width');
+				picture.removeAttribute('height');
+				picture.style = 'width: var(--maxwidth)';
+			}
+			var compId = picture.getAttribute('data-variant');
+			if ( compId && variants[compId] ) {
+				var isConditional = variants[compId]['same'];
+				if ( theme === 'light' || isConditional || variants[compId]['dark']['src'] === false ) {
+					picture.src = variants[compId]['light']['src'];
+					picture.srcset = variants[compId]['light']['srcset'] || '';
+					picture.sizes = variants[compId]['light']['sizes'];
+					continue;
+				};
+				picture.src = variants[compId]['dark']['src'];
+				picture.srcset = variants[compId]['dark']['srcset'] || '';
+				picture.sizes = variants[compId]['dark']['sizes'];
+			};
+		};
+	};
+
+	var observer = new MutationObserver(function(mutations) {
+		mutations.forEach(function(mutation) {
+			if (mutation.type == 'attributes') {
+				theme = html.getAttribute('data-neve-theme');
+				setCurrentTheme(theme);
+			};
+		});
+	});
+
+	observer.observe(html, {
+		attributes: true
+	});</script> <script type="text/javascript" src="./Cómo Obtener la Hora Actual en Python - Código Pitón_files/detectmobilebrowser.js.descarga" id="detectmobilebrowser-js"></script> <script type="text/javascript" id="mystickysidebar-js-extra">/*  */
+var mystickyside_name = {"mystickyside_string":".blog-sidebar","mystickyside_content_string":".neve-main","mystickyside_margin_top_string":"90","mystickyside_margin_bot_string":"0","mystickyside_update_sidebar_height_string":"false","mystickyside_min_width_string":"795","device_desktop":"1","device_mobile":"1"};
+/*  */</script> <script type="text/javascript" src="./Cómo Obtener la Hora Actual en Python - Código Pitón_files/theia-sticky-sidebar.js.descarga" id="mystickysidebar-js"></script> <script type="text/javascript" id="themify-popup-js-extra">/*  */
+var themifyPopup = {"assets":"https:\/\/www.codigopiton.com\/wp-content\/plugins\/themify-popup\/assets","count_views":""};
+/*  */</script> <script type="text/javascript" src="./Cómo Obtener la Hora Actual en Python - Código Pitón_files/scripts.min.js.descarga" id="themify-popup-js"></script> <script data-no-optimize="1">!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?module.exports=e():"function"==typeof define&&define.amd?define(e):(t="undefined"!=typeof globalThis?globalThis:t||self).LazyLoad=e()}(this,function(){"use strict";function e(){return(e=Object.assign||function(t){for(var e=1;e<arguments.length;e++){var n,a=arguments[e];for(n in a)Object.prototype.hasOwnProperty.call(a,n)&&(t[n]=a[n])}return t}).apply(this,arguments)}function i(t){return e({},it,t)}function o(t,e){var n,a="LazyLoad::Initialized",i=new t(e);try{n=new CustomEvent(a,{detail:{instance:i}})}catch(t){(n=document.createEvent("CustomEvent")).initCustomEvent(a,!1,!1,{instance:i})}window.dispatchEvent(n)}function l(t,e){return t.getAttribute(gt+e)}function c(t){return l(t,bt)}function s(t,e){return function(t,e,n){e=gt+e;null!==n?t.setAttribute(e,n):t.removeAttribute(e)}(t,bt,e)}function r(t){return s(t,null),0}function u(t){return null===c(t)}function d(t){return c(t)===vt}function f(t,e,n,a){t&&(void 0===a?void 0===n?t(e):t(e,n):t(e,n,a))}function _(t,e){nt?t.classList.add(e):t.className+=(t.className?" ":"")+e}function v(t,e){nt?t.classList.remove(e):t.className=t.className.replace(new RegExp("(^|\\s+)"+e+"(\\s+|$)")," ").replace(/^\s+/,"").replace(/\s+$/,"")}function g(t){return t.llTempImage}function b(t,e){!e||(e=e._observer)&&e.unobserve(t)}function p(t,e){t&&(t.loadingCount+=e)}function h(t,e){t&&(t.toLoadCount=e)}function n(t){for(var e,n=[],a=0;e=t.children[a];a+=1)"SOURCE"===e.tagName&&n.push(e);return n}function m(t,e){(t=t.parentNode)&&"PICTURE"===t.tagName&&n(t).forEach(e)}function a(t,e){n(t).forEach(e)}function E(t){return!!t[st]}function I(t){return t[st]}function y(t){return delete t[st]}function A(e,t){var n;E(e)||(n={},t.forEach(function(t){n[t]=e.getAttribute(t)}),e[st]=n)}function k(a,t){var i;E(a)&&(i=I(a),t.forEach(function(t){var e,n;e=a,(t=i[n=t])?e.setAttribute(n,t):e.removeAttribute(n)}))}function L(t,e,n){_(t,e.class_loading),s(t,ut),n&&(p(n,1),f(e.callback_loading,t,n))}function w(t,e,n){n&&t.setAttribute(e,n)}function x(t,e){w(t,ct,l(t,e.data_sizes)),w(t,rt,l(t,e.data_srcset)),w(t,ot,l(t,e.data_src))}function O(t,e,n){var a=l(t,e.data_bg_multi),i=l(t,e.data_bg_multi_hidpi);(a=at&&i?i:a)&&(t.style.backgroundImage=a,n=n,_(t=t,(e=e).class_applied),s(t,ft),n&&(e.unobserve_completed&&b(t,e),f(e.callback_applied,t,n)))}function N(t,e){!e||0<e.loadingCount||0<e.toLoadCount||f(t.callback_finish,e)}function C(t,e,n){t.addEventListener(e,n),t.llEvLisnrs[e]=n}function M(t){return!!t.llEvLisnrs}function z(t){if(M(t)){var e,n,a=t.llEvLisnrs;for(e in a){var i=a[e];n=e,i=i,t.removeEventListener(n,i)}delete t.llEvLisnrs}}function R(t,e,n){var a;delete t.llTempImage,p(n,-1),(a=n)&&--a.toLoadCount,v(t,e.class_loading),e.unobserve_completed&&b(t,n)}function T(o,r,c){var l=g(o)||o;M(l)||function(t,e,n){M(t)||(t.llEvLisnrs={});var a="VIDEO"===t.tagName?"loadeddata":"load";C(t,a,e),C(t,"error",n)}(l,function(t){var e,n,a,i;n=r,a=c,i=d(e=o),R(e,n,a),_(e,n.class_loaded),s(e,dt),f(n.callback_loaded,e,a),i||N(n,a),z(l)},function(t){var e,n,a,i;n=r,a=c,i=d(e=o),R(e,n,a),_(e,n.class_error),s(e,_t),f(n.callback_error,e,a),i||N(n,a),z(l)})}function G(t,e,n){var a,i,o,r,c;t.llTempImage=document.createElement("IMG"),T(t,e,n),E(c=t)||(c[st]={backgroundImage:c.style.backgroundImage}),o=n,r=l(a=t,(i=e).data_bg),c=l(a,i.data_bg_hidpi),(r=at&&c?c:r)&&(a.style.backgroundImage='url("'.concat(r,'")'),g(a).setAttribute(ot,r),L(a,i,o)),O(t,e,n)}function D(t,e,n){var a;T(t,e,n),a=e,e=n,(t=It[(n=t).tagName])&&(t(n,a),L(n,a,e))}function V(t,e,n){var a;a=t,(-1<yt.indexOf(a.tagName)?D:G)(t,e,n)}function F(t,e,n){var a;t.setAttribute("loading","lazy"),T(t,e,n),a=e,(e=It[(n=t).tagName])&&e(n,a),s(t,vt)}function j(t){t.removeAttribute(ot),t.removeAttribute(rt),t.removeAttribute(ct)}function P(t){m(t,function(t){k(t,Et)}),k(t,Et)}function S(t){var e;(e=At[t.tagName])?e(t):E(e=t)&&(t=I(e),e.style.backgroundImage=t.backgroundImage)}function U(t,e){var n;S(t),n=e,u(e=t)||d(e)||(v(e,n.class_entered),v(e,n.class_exited),v(e,n.class_applied),v(e,n.class_loading),v(e,n.class_loaded),v(e,n.class_error)),r(t),y(t)}function $(t,e,n,a){var i;n.cancel_on_exit&&(c(t)!==ut||"IMG"===t.tagName&&(z(t),m(i=t,function(t){j(t)}),j(i),P(t),v(t,n.class_loading),p(a,-1),r(t),f(n.callback_cancel,t,e,a)))}function q(t,e,n,a){var i,o,r=(o=t,0<=pt.indexOf(c(o)));s(t,"entered"),_(t,n.class_entered),v(t,n.class_exited),i=t,o=a,n.unobserve_entered&&b(i,o),f(n.callback_enter,t,e,a),r||V(t,n,a)}function H(t){return t.use_native&&"loading"in HTMLImageElement.prototype}function B(t,i,o){t.forEach(function(t){return(a=t).isIntersecting||0<a.intersectionRatio?q(t.target,t,i,o):(e=t.target,n=t,a=i,t=o,void(u(e)||(_(e,a.class_exited),$(e,n,a,t),f(a.callback_exit,e,n,t))));var e,n,a})}function J(e,n){var t;et&&!H(e)&&(n._observer=new IntersectionObserver(function(t){B(t,e,n)},{root:(t=e).container===document?null:t.container,rootMargin:t.thresholds||t.threshold+"px"}))}function K(t){return Array.prototype.slice.call(t)}function Q(t){return t.container.querySelectorAll(t.elements_selector)}function W(t){return c(t)===_t}function X(t,e){return e=t||Q(e),K(e).filter(u)}function Y(e,t){var n;(n=Q(e),K(n).filter(W)).forEach(function(t){v(t,e.class_error),r(t)}),t.update()}function t(t,e){var n,a,t=i(t);this._settings=t,this.loadingCount=0,J(t,this),n=t,a=this,Z&&window.addEventListener("online",function(){Y(n,a)}),this.update(e)}var Z="undefined"!=typeof window,tt=Z&&!("onscroll"in window)||"undefined"!=typeof navigator&&/(gle|ing|ro)bot|crawl|spider/i.test(navigator.userAgent),et=Z&&"IntersectionObserver"in window,nt=Z&&"classList"in document.createElement("p"),at=Z&&1<window.devicePixelRatio,it={elements_selector:".lazy",container:tt||Z?document:null,threshold:300,thresholds:null,data_src:"src",data_srcset:"srcset",data_sizes:"sizes",data_bg:"bg",data_bg_hidpi:"bg-hidpi",data_bg_multi:"bg-multi",data_bg_multi_hidpi:"bg-multi-hidpi",data_poster:"poster",class_applied:"applied",class_loading:"litespeed-loading",class_loaded:"litespeed-loaded",class_error:"error",class_entered:"entered",class_exited:"exited",unobserve_completed:!0,unobserve_entered:!1,cancel_on_exit:!0,callback_enter:null,callback_exit:null,callback_applied:null,callback_loading:null,callback_loaded:null,callback_error:null,callback_finish:null,callback_cancel:null,use_native:!1},ot="src",rt="srcset",ct="sizes",lt="poster",st="llOriginalAttrs",ut="loading",dt="loaded",ft="applied",_t="error",vt="native",gt="data-",bt="ll-status",pt=[ut,dt,ft,_t],ht=[ot],mt=[ot,lt],Et=[ot,rt,ct],It={IMG:function(t,e){m(t,function(t){A(t,Et),x(t,e)}),A(t,Et),x(t,e)},IFRAME:function(t,e){A(t,ht),w(t,ot,l(t,e.data_src))},VIDEO:function(t,e){a(t,function(t){A(t,ht),w(t,ot,l(t,e.data_src))}),A(t,mt),w(t,lt,l(t,e.data_poster)),w(t,ot,l(t,e.data_src)),t.load()}},yt=["IMG","IFRAME","VIDEO"],At={IMG:P,IFRAME:function(t){k(t,ht)},VIDEO:function(t){a(t,function(t){k(t,ht)}),k(t,mt),t.load()}},kt=["IMG","IFRAME","VIDEO"];return t.prototype={update:function(t){var e,n,a,i=this._settings,o=X(t,i);{if(h(this,o.length),!tt&&et)return H(i)?(e=i,n=this,o.forEach(function(t){-1!==kt.indexOf(t.tagName)&&F(t,e,n)}),void h(n,0)):(t=this._observer,i=o,t.disconnect(),a=t,void i.forEach(function(t){a.observe(t)}));this.loadAll(o)}},destroy:function(){this._observer&&this._observer.disconnect(),Q(this._settings).forEach(function(t){y(t)}),delete this._observer,delete this._settings,delete this.loadingCount,delete this.toLoadCount},loadAll:function(t){var e=this,n=this._settings;X(t,n).forEach(function(t){b(t,e),V(t,n,e)})},restoreAll:function(){var e=this._settings;Q(e).forEach(function(t){U(t,e)})}},t.load=function(t,e){e=i(e);V(t,e)},t.resetStatus=function(t){r(t)},Z&&function(t,e){if(e)if(e.length)for(var n,a=0;n=e[a];a+=1)o(t,n);else o(t,e)}(t,window.lazyLoadOptions),t});!function(e,t){"use strict";function a(){t.body.classList.add("litespeed_lazyloaded")}function n(){console.log("[LiteSpeed] Start Lazy Load Images"),d=new LazyLoad({elements_selector:"[data-lazyloaded]",callback_finish:a}),o=function(){d.update()},e.MutationObserver&&new MutationObserver(o).observe(t.documentElement,{childList:!0,subtree:!0,attributes:!0})}var d,o;e.addEventListener?e.addEventListener("load",n,!1):e.attachEvent("onload",n)}(window,document);</script>
+
+
+<div id="torrent-scanner-popup" style="display: none;"></div></body></html>

@@ -1,0 +1,38 @@
+{
+    "workbench.colorTheme": "Default Dark+",
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "workbench.editor.untitled.hint": "hidden",
+    "workbench.iconTheme": "material-icon-theme",
+    "material-icon-theme.folders.theme": "specific",
+    "indentRainbow.colors": [
+        "rgba(239, 71, 111,0.15)",
+        "rgba(255, 209, 102,0.15)",
+        "rgba(6, 214, 160, 0.15)",
+        "rgba(17, 138, 178,0.15)",
+        "rgba(7, 59, 76,0.15)",
+        "rgba(7, 59, 76,0.1)",
+        "rgba(7, 59, 76,0.05)",
+        "rgba(7, 59, 76,0.025)"
+    ],
+    "cSpell.language": "en,es",
+    "editor.formatOnSave": true,
+    "editor.accessibilitySupport": "off",
+    "python.analysis.indexing": true,
+    "python.analysis.packageIndexDepths": [
+        {
+            "name": "",
+            "depth": 2,
+            "includeAllSymbols": true
+        },
+    ],
+    "json.schemas": [
+    
+    ]
+}

@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<XPD:PROJECT xmlns:XPD="http://www.staruml.com" version="1">
+<XPD:HEADER>
+<XPD:SUBUNITS>
+</XPD:SUBUNITS>
+<XPD:PROFILES>
+<XPD:PROFILE>UMLStandard</XPD:PROFILE>
+</XPD:PROFILES>
+</XPD:HEADER>
+<XPD:BODY>
+<XPD:OBJ name="DocumentElement" type="UMLProject" guid="Rx6mhhltb0mPisYr0yPxBAAA">
+<XPD:ATTR name="Title" type="string">desing_gui_parking_log</XPD:ATTR>
+<XPD:ATTR name="#OwnedElements" type="integer">6</XPD:ATTR>
+<XPD:OBJ name="OwnedElements[0]" type="UMLPackage" guid="CGs+uUjFPkGVsRBU9px7tgAA">
+<XPD:ATTR name="Name" type="string">view</XPD:ATTR>
+<XPD:REF name="Namespace">Rx6mhhltb0mPisYr0yPxBAAA</XPD:REF>
+<XPD:ATTR name="#OwnedElements" type="integer">4</XPD:ATTR>
+<XPD:OBJ name="OwnedElements[0]" type="UMLClass" guid="NsFJ+lrXfEiy3FjmQ+RXSwAA">
+<XPD:ATTR name="Name" type="string">MainWindowView</XPD:ATTR>
+<XPD:REF name="Namespace">CGs+uUjFPkGVsRBU9px7tgAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedElements[1]" type="UMLClass" guid="ygxHy6irUkC9+Z3FAmciMgAA">
+<XPD:ATTR name="Name" type="string">RegisterInputVehicleView</XPD:ATTR>
+<XPD:REF name="Namespace">CGs+uUjFPkGVsRBU9px7tgAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedElements[2]" type="UMLClass" guid="k/3AnQqdB0aU+tGsf7uqwwAA">
+<XPD:ATTR name="Name" type="string">RegisterOutputView</XPD:ATTR>
+<XPD:REF name="Namespace">CGs+uUjFPkGVsRBU9px7tgAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedElements[3]" type="UMLClass" guid="pyfBL+ZhB06u+SH4sFaRWQAA">
+<XPD:ATTR name="Name" type="string">ReportParkingView</XPD:ATTR>
+<XPD:REF name="Namespace">CGs+uUjFPkGVsRBU9px7tgAA</XPD:REF>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedElements[1]" type="UMLModel" guid="ubwKMr48oUeo777dWHAFPgAA">
+<XPD:ATTR name="Name" type="string">class_model</XPD:ATTR>
+<XPD:REF name="Namespace">Rx6mhhltb0mPisYr0yPxBAAA</XPD:REF>
+<XPD:ATTR name="#OwnedDiagrams" type="integer">1</XPD:ATTR>
+<XPD:OBJ name="OwnedDiagrams[0]" type="UMLClassDiagram" guid="4TtTdNuI9ki4HUTJqOW2IQAA">
+<XPD:ATTR name="Name" type="string">package_diagram</XPD:ATTR>
+<XPD:REF name="DiagramOwner">ubwKMr48oUeo777dWHAFPgAA</XPD:REF>
+<XPD:OBJ name="DiagramView" type="UMLClassDiagramView" guid="mzgkrrVECEyWjSjnTmfJgAAA">
+<XPD:REF name="Model">4TtTdNuI9ki4HUTJqOW2IQAA</XPD:REF>
+<XPD:REF name="Diagram">4TtTdNuI9ki4HUTJqOW2IQAA</XPD:REF>
+</XPD:OBJ>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedElements[2]" type="UMLPackage" guid="61vJyL4OY02YdIZQa6ov9QAA">
+<XPD:ATTR name="Name" type="string">controller</XPD:ATTR>
+<XPD:REF name="Namespace">Rx6mhhltb0mPisYr0yPxBAAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedElements[3]" type="UMLPackage" guid="33BT/iFOok6FkKgpJjGs4QAA">
+<XPD:ATTR name="Name" type="string">data</XPD:ATTR>
+<XPD:REF name="Namespace">Rx6mhhltb0mPisYr0yPxBAAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedElements[4]" type="UMLPackage" guid="8OAsWIBLV0K7Dx2MMPHkOAAA">
+<XPD:ATTR name="Name" type="string">classes</XPD:ATTR>
+<XPD:REF name="Namespace">Rx6mhhltb0mPisYr0yPxBAAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedElements[5]" type="UMLPackage" guid="1ZtyH3wRF0WpRIStW8IAVgAA">
+<XPD:ATTR name="Name" type="string">collections</XPD:ATTR>
+<XPD:REF name="Namespace">Rx6mhhltb0mPisYr0yPxBAAA</XPD:REF>
+</XPD:OBJ>
+</XPD:OBJ>
+</XPD:BODY>
+</XPD:PROJECT>

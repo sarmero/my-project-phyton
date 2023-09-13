@@ -1,0 +1,39 @@
+
+import os
+
+from structures.Stack import Stack
+
+
+def print_list(list):
+    aux = list.front()
+    i = 0
+    print("Lista")
+    while aux is not None:
+        print("[", i, "]", aux.value)
+        aux = aux.next
+        i += 1
+
+    print("total ", list.size())
+    os.system("pause")
+
+
+stack = Stack()
+
+list = [10,20,30,40,50,60,70,80,90,100]
+
+for lists in list:
+    stack.push(lists)
+
+print_list(stack)
+
+print("Eliminar en la posición 2")
+stack.delete(2)
+print_list(stack)
+
+print("Editar en la posición 4")
+stack.update(4,5000)
+print_list(stack)
+
+print("Insert en la posición 7")
+stack.insert(7,965)
+print_list(stack)

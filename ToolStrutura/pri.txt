@@ -1,0 +1,29 @@
+def factorial(num): 
+    if num < 0: 
+        print("Factorial of negative num does not exist")
+
+    elif num == 0: 
+        return 1
+        
+    else: 
+        fact = 1
+        while(num > 1): 
+            fact *= num 
+            num -= 1
+        return fact 
+
+num = 5; 
+
+print("Factorial of",num,"is", factorial(num)) 
+
+def es_primo(num, n=2):
+    if n >= num:
+        print("Es primo")
+        return True
+    elif num % n != 0:
+        return es_primo(num, n + 1)
+    else:
+        print("No es primo", n, "es divisor")
+        return False
+
+
